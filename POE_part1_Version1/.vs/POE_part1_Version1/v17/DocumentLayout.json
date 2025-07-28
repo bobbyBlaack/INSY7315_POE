@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\caretakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\caretakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\propmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\propmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CaretakerController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\CaretakerController.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\CaretakerController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\CaretakerController.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Controllers\\CaretakerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:41:53.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PropManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\PropManagerController.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\PropManagerController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\PropManagerController.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Controllers\\PropManagerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:41:30.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:41:13.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TenantController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\TenantController.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\TenantController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\TenantController.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Controllers\\TenantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:40:56.855Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
