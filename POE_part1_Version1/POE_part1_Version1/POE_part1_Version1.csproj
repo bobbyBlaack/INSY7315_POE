@@ -11,6 +11,11 @@
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\PropManager\" />
     <Folder Include="Views\Tenants\" />
+    <Folder Include="wwwroot\Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Styles\MainStyle.css" />
   </ItemGroup>
 
 </Project>

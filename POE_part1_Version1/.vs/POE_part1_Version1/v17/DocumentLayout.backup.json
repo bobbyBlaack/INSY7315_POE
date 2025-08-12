@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\home\\createaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\home\\createaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "RelativeToolTip": "POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T09:10:43.837Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T06:30:38.866Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T09:09:20.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "RelativeToolTip": "POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T09:07:01.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "POE_part1_Version1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T09:06:40.589Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

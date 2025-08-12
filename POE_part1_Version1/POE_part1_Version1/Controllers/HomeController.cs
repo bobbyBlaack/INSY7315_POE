@@ -18,6 +18,19 @@ namespace POE_part1_Version1.Controllers
             return View();
         }
 
+        public IActionResult SignIn() { 
+        
+            return View();
+        
+        }
+
+        public IActionResult CreateAccount()
+        {
+
+            return View();
+
+        }
+
         public IActionResult Privacy()
         {
             return View();
