@@ -3,6 +3,4342 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.cxrhv5swa8.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111470293"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cxrhv5swa8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.cxrhv5swa8.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cxrhv5swa8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.cxrhv5swa8.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cxrhv5swa8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111470293"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YOWrZl/7lcf+eUQELiqRzC1Ldwd6RWd2Tp+CgqocNyA="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus10-rv5Ap.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-89ax5S9JBIT+ZoDrNhNb8S2q+z+9GH8hSI8xjrVeE8E="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.b6gwn63ll4.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000113533152"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b6gwn63ll4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.b6gwn63ll4.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b6gwn63ll4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.b6gwn63ll4.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b6gwn63ll4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000113533152"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-49iB9xRkABJTWIhrbcH/QCKjeT+ezsFOgvFkJMh2njQ="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus100-wojE8.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAmuNk57nGasTYfJXGDW4uNZHxYQiGrVYOnn5PbauiM="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.0bbdjlmwdg.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111632061"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0bbdjlmwdg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.0bbdjlmwdg.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0bbdjlmwdg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.0bbdjlmwdg.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0bbdjlmwdg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111632061"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEFwAgUoIeQYw8ZzTrm4F40qwbQoZeLDOUoOV9B3H2A="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus20-MA7Gw.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CtJV862aoJOrpvM7/2BguaTPQOHfNMh/ZV41ML7BFNM="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.kcozkx91vp.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111222333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kcozkx91vp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.kcozkx91vp.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kcozkx91vp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.kcozkx91vp.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kcozkx91vp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111222333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/BGunpoqLDOR8ddRuO/6ubMKeKe7kt29ILMVVQgCTwY="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus30-KVv3A.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tXvqZAOheSE/UWsudIQQpZKmsRXna1H0j/yCvtGE5+M="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.ako3td2gj5.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111395789"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ako3td2gj5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.ako3td2gj5.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ako3td2gj5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.ako3td2gj5.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ako3td2gj5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111395789"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q+itKvStArCKSVfnSR/6XUx+64fs8AxyCuqchDAsJk="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus40-2vd0l.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5S5Kail5EOLMdr4URiTg+xAilHAwXy1cUWocUAflaj8="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.mmj8gdmz4t.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111557340"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmj8gdmz4t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.mmj8gdmz4t.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmj8gdmz4t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.mmj8gdmz4t.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmj8gdmz4t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111557340"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-omYvE+514bneDa2I1I6AlkROrRgmQyZ2TvAteBLLni4="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024minus50-vnjE7.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T1LLqkR45m4t9YG4HqQA317/uWsnmGwZmkHTQmmC/0A="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000116767865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.r9uzgxsjcz.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000116767865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r9uzgxsjcz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.r9uzgxsjcz.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r9uzgxsjcz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/zePXwh+Vh9lgWmX35kwwkkqngyygqUbAZbtfW2EGfw="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.r9uzgxsjcz.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r9uzgxsjcz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m/XjD9NBCUUyWiyeTHEu3WJLD20sQdd+3TscaqKFgPg="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus0-7Oy0R.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.5vht74bmxn.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111457869"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5vht74bmxn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.5vht74bmxn.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5vht74bmxn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.5vht74bmxn.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5vht74bmxn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111457869"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T9mwVnLo1galATFIElzKataJU1l7iBKt7fd1BeEWtFw="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus10-drMgE.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWk/R1k9o19hddfZSmSh48aMgJAn4F5pb7sEXPaPDZs="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.9b8z49xbfe.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111247080"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9b8z49xbfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.9b8z49xbfe.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9b8z49xbfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.9b8z49xbfe.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9b8z49xbfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111247080"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Sy0ujYeWNdG/j/ybJ77GfSR5vcn4M5mfp21LwI3IJA="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus100-gwv3P.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxXvkyyAvwIaUaqS2gDsY+F2n1Ga8OlOrcWfOM4Qk9E="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.03mraooh35.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111445447"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03mraooh35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.03mraooh35.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03mraooh35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.03mraooh35.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03mraooh35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111445447"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jBLW/1sAFLM9R8NlrDRSZ+2Kfhplw1jyiqwo5d1Cy8M="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus20-m2jXa.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kTn3PHWpqbDJrcgugFeykoHGvalZ0kPAaat2ZUP2Epw="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.i0up0qxvwv.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111247080"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i0up0qxvwv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.i0up0qxvwv.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i0up0qxvwv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.i0up0qxvwv.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i0up0qxvwv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111247080"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mtw9TZ4CxqkKOezRkt+EVV+G2fqn188U/Jb31oIye2o="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus30-PV1Jx.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TRWbiTBNvGt4gElxlAYyznazHeVt5H5iihOlv6BeRLE="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.lwli5pwazs.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111234705"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwli5pwazs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.lwli5pwazs.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwli5pwazs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.lwli5pwazs.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwli5pwazs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111234705"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mxdFt/5cZj605d3HGoU+0w0zp8wkr1Hv5JvzQhUWT1o="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus40-LVwqD.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:57 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rUaUSdqkghJNxh3iTvpof9w9l6w2Op1O6OoxiU0FaSg="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.exvwbfwx1f.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111284220"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "exvwbfwx1f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.exvwbfwx1f.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "exvwbfwx1f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.exvwbfwx1f.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "exvwbfwx1f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000111284220"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xs/5HXidEeO0dNO5ficm3PX8tZIZmHYWl9/bJPk7sdc="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/Fhwaseriesd2024plus50-XG2Lj.otf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSAvHp9ARYmHFnLzRkuafnEs6Jf0lwweNaRbD+RhcxM="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.jozpki9zfe.txt",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.009259259259"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jozpki9zfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/info.txt"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.jozpki9zfe.txt",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jozpki9zfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/info.txt"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.jozpki9zfe.txt.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jozpki9zfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI="
+        },
+        {
+          "Name": "label",
+          "Value": "Fonts/fhwa-series-d-2024-font/info.txt.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.txt",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.009259259259"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.txt",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4+xD8/UvHP8/CbBO71/5mznzFfOcMJiocZt2faeW58w="
+        }
+      ]
+    },
+    {
+      "Route": "Fonts/fhwa-series-d-2024-font/info.txt.gz",
+      "AssetFile": "Fonts/fhwa-series-d-2024-font/info.txt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:37:58 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G+oM4CwX40XqeAJBAB5Mm7Vtf+Qe8DHLz68cRogkhKI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Background1.jpg",
+      "AssetFile": "Images/Background1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3529417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hzi2VjZylnThky/OaLJRJDBItvM5jIwtQJdi3XFs4/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:49:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hzi2VjZylnThky/OaLJRJDBItvM5jIwtQJdi3XFs4/c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Background1.tjju59i40b.jpg",
+      "AssetFile": "Images/Background1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3529417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hzi2VjZylnThky/OaLJRJDBItvM5jIwtQJdi3XFs4/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:49:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tjju59i40b"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hzi2VjZylnThky/OaLJRJDBItvM5jIwtQJdi3XFs4/c="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Background1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Background2.8ty76pkns1.jpg",
+      "AssetFile": "Images/Background2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3254607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/HX+QwH4VcM0vgx9eORoUSeFkgbwAF4LXQ5Wi77p+UM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:46:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ty76pkns1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/HX+QwH4VcM0vgx9eORoUSeFkgbwAF4LXQ5Wi77p+UM="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Background2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/Background2.jpg",
+      "AssetFile": "Images/Background2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3254607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/HX+QwH4VcM0vgx9eORoUSeFkgbwAF4LXQ5Wi77p+UM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 06:46:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/HX+QwH4VcM0vgx9eORoUSeFkgbwAF4LXQ5Wi77p+UM="
+        }
+      ]
+    },
+    {
       "Route": "POE_part1_Version1.o77vkwxgdv.styles.css",
       "AssetFile": "POE_part1_Version1.styles.css.gz",
       "Selectors": [
@@ -301,13 +4637,174 @@
       ]
     },
     {
+      "Route": "Styles/MainStyle.9f5a2vwitv.css",
+      "AssetFile": "Styles/MainStyle.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001562500000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9f5a2vwitv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8="
+        },
+        {
+          "Name": "label",
+          "Value": "Styles/MainStyle.css"
+        }
+      ]
+    },
+    {
+      "Route": "Styles/MainStyle.9f5a2vwitv.css",
+      "AssetFile": "Styles/MainStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9f5a2vwitv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8="
+        },
+        {
+          "Name": "label",
+          "Value": "Styles/MainStyle.css"
+        }
+      ]
+    },
+    {
+      "Route": "Styles/MainStyle.9f5a2vwitv.css.gz",
+      "AssetFile": "Styles/MainStyle.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9f5a2vwitv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y="
+        },
+        {
+          "Name": "label",
+          "Value": "Styles/MainStyle.css.gz"
+        }
+      ]
+    },
+    {
       "Route": "Styles/MainStyle.css",
       "AssetFile": "Styles/MainStyle.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.028571428571"
+          "Quality": "0.001562500000"
         }
       ],
       "ResponseHeaders": [
@@ -325,7 +4822,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "639"
         },
         {
           "Name": "Content-Type",
@@ -333,15 +4830,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "W/\"CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
         },
         {
           "Name": "Vary",
@@ -351,7 +4848,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8="
         }
       ]
     },
@@ -370,7 +4867,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14"
+          "Value": "1584"
         },
         {
           "Name": "Content-Type",
@@ -378,17 +4875,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "\"CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-CyjQS4L7cVuZCviNkVfPJe5KUj7DSIWRkHVXjSZF+E8="
         }
       ]
     },
@@ -411,7 +4908,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "639"
         },
         {
           "Name": "Content-Type",
@@ -419,11 +4916,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
+          "Value": "Tue, 12 Aug 2025 08:05:25 GMT"
         },
         {
           "Name": "Vary",
@@ -433,168 +4930,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y="
-        }
-      ]
-    },
-    {
-      "Route": "Styles/MainStyle.dyjx89twm7.css",
-      "AssetFile": "Styles/MainStyle.css.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.028571428571"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyjx89twm7"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
-        },
-        {
-          "Name": "label",
-          "Value": "Styles/MainStyle.css"
-        }
-      ]
-    },
-    {
-      "Route": "Styles/MainStyle.dyjx89twm7.css",
-      "AssetFile": "Styles/MainStyle.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyjx89twm7"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
-        },
-        {
-          "Name": "label",
-          "Value": "Styles/MainStyle.css"
-        }
-      ]
-    },
-    {
-      "Route": "Styles/MainStyle.dyjx89twm7.css.gz",
-      "AssetFile": "Styles/MainStyle.css.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 09:15:33 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyjx89twm7"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y="
-        },
-        {
-          "Name": "label",
-          "Value": "Styles/MainStyle.css.gz"
+          "Value": "sha256-GURlezvtWf+rwQek4fE0n/oGKCKlDE41IGo2/+eBt1Y="
         }
       ]
     },

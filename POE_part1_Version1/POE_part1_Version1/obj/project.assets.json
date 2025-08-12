@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\POE_part1_Version1.csproj",
+      "projectUniqueName": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\POE_part1_Version1.csproj",
       "projectName": "POE_part1_Version1",
-      "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\POE_part1_Version1.csproj",
+      "projectPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\POE_part1_Version1.csproj",
       "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\obj\\",
+      "outputPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

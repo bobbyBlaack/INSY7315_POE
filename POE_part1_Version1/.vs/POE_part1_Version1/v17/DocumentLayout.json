@@ -1,25 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\",
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\wwwroot\\styles\\mainstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\wwwroot\\styles\\mainstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\source\\repos\\poe_part1_version1\\poe_part1_version1\\views\\home\\createaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|c:\\users\\lab_services_student\\documents\\github\\insy7315_poe\\poe_part1_version1\\poe_part1_version1\\views\\home\\createaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AF16494E-C83B-4CDF-A6BF-7134C5A2D2BB}|POE_part1_Version1\\POE_part1_Version1.csproj|solutionrelative:poe_part1_version1\\views\\home\\createaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -30,28 +42,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
               "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
               "RelativeToolTip": "POE_part1_Version1\\Views\\Home\\SignIn.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-28T09:10:43.837Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
               "RelativeDocumentMoniker": "POE_part1_Version1\\Program.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Program.cs",
               "RelativeToolTip": "POE_part1_Version1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,24 +73,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "MainStyle.css",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\wwwroot\\Styles\\MainStyle.css",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\wwwroot\\Styles\\MainStyle.css",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\wwwroot\\Styles\\MainStyle.css",
+              "RelativeToolTip": "POE_part1_Version1\\wwwroot\\Styles\\MainStyle.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-12T08:05:12.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "POE_part1_Version1\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-12T07:14:40.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "POE_part1_Version1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "POE_part1_Version1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-12T07:14:34.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "POE_part1_Version1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-28T09:09:20.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CreateAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
               "RelativeDocumentMoniker": "POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
               "RelativeToolTip": "POE_part1_Version1\\Views\\Home\\CreateAccount.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -85,11 +136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "POE_part1_Version1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\INSY7315_POE\\POE_part1_Version1\\POE_part1_Version1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "POE_part1_Version1\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
