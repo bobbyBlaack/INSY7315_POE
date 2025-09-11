@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Caretaker\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\PropManager\" />
+    <Folder Include="Views\Tenants\" />
+    <Folder Include="wwwroot\Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Styles\MainStyle.css" />
+  </ItemGroup>
+
+</Project>
