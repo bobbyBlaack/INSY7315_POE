@@ -2,5 +2,7 @@
 {
     public class AppDbContext
     {
+
+        int snake = 123;
     }
 }
