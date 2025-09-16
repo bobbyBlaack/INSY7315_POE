@@ -3,6 +3,8 @@
     public class AppDbContext
     {
 
-        int snake = 123;
+        int snake2 = 123;
+
+        int jeff =  + 2;
     }
 }
