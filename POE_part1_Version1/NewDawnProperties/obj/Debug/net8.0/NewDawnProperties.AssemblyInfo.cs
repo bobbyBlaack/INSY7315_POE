@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewDawnProperties")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69501e20ef8d8a99164517439a1670935bff0dc9")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewDawnProperties")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewDawnProperties")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

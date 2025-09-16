@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\NewDawnProperties.csproj",
+      "projectUniqueName": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
       "projectName": "NewDawnProperties",
-      "projectPath": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\NewDawnProperties.csproj",
+      "projectPath": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
       "packagesPath": "C:\\Users\\USER-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\obj\\",
+      "outputPath": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
