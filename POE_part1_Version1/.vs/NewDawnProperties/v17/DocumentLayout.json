@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\user-pc\\source\\repos\\newdawnproperties\\newdawnproperties\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -16,6 +17,33 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\user-pc\\source\\repos\\newdawnproperties\\newdawnproperties\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\user-pc\\source\\repos\\newdawnproperties\\newdawnproperties\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\user-pc\\source\\repos\\newdawnproperties\\newdawnproperties\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\newdawnproperties\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\newdawnproperties\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\newdawnproperties\\controllers\\caretakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\controllers\\caretakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\newdawnproperties\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\newdawnproperties\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -39,6 +67,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "NewDawnProperties\\Data\\AppDbContext.cs",
@@ -47,11 +76,61 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T07:40:50.018Z",
+=======
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\.gitignore",
+              "RelativeDocumentMoniker": "NewDawnProperties\\.gitignore",
+              "ToolTip": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\.gitignore",
+              "RelativeToolTip": "NewDawnProperties\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-16T12:12:45.593Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
+=======
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-16T08:49:21.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "NewDawnProperties\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "NewDawnProperties\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-16T08:49:10.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NewDawnProperties\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "NewDawnProperties\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:40:50.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "CareTakerController.cs",
               "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Controllers\\CareTakerController.cs",
               "RelativeDocumentMoniker": "NewDawnProperties\\Controllers\\CareTakerController.cs",
@@ -59,12 +138,20 @@
               "RelativeToolTip": "NewDawnProperties\\Controllers\\CareTakerController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-09-16T07:39:08.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "WhenOpened": "2025-09-16T07:39:08.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "TenantController.cs",
               "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Controllers\\TenantController.cs",
               "RelativeDocumentMoniker": "NewDawnProperties\\Controllers\\TenantController.cs",
@@ -72,12 +159,20 @@
               "RelativeToolTip": "NewDawnProperties\\Controllers\\TenantController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-09-16T07:38:52.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+              "WhenOpened": "2025-09-16T07:38:52.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\USER-PC\\source\\repos\\NewDawnProperties\\NewDawnProperties\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "NewDawnProperties\\Controllers\\AdminController.cs",
@@ -85,8 +180,12 @@
               "RelativeToolTip": "NewDawnProperties\\Controllers\\AdminController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-09-16T07:38:40.545Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2025-09-16T07:38:40.545Z"
+>>>>>>> Stashed changes
             }
           ]
         }
