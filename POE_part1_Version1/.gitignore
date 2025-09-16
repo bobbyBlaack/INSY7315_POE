@@ -1,3 +1,45 @@
-﻿git rm -r --cached .vs
-git commit -m "Stop tracking .vs folder"
-git push
+﻿# Visual Studio cache and user files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+[Bb]uild/
+
+# Rider / ReSharper / VS extensions
+_ReSharper*/
+*.DotSettings.user
+*.DotSettings
+
+# Logs
+*.log
+*.tlog
+
+# Database / local data
+*.dbmdl
+*.bak
+*.mdf
+*.ldf
+
+# Temporary files
+*.tmp
+*.tmp_proj
+*.cache
+*.pdb
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Others
+*.psess
+*.vsp
+*.vspx
+*.vssscc
