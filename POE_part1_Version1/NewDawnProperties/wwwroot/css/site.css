@@ -1,22 +1,29 @@
-html {
-  font-size: 14px;
+
+/*Style for the button and form it is in*/
+.Listing-Button {
+    float: left;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 20px;
+}
+.custom-btn{
+    width:300px;
+    height: 600px;
+    border-radius:15px;
+    font-family:Arial;
+
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+
+/*Landing page body stlye*/
+.landing-body {
+    background-image: url('../images/paul-hanaoka-5za2ss955yg-unsplash.jpg');
+    background-size: cover; /* scale to cover screen */
+    background-repeat: no-repeat;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}

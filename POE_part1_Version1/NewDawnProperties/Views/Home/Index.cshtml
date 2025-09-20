@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+<body class="landing-body">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <h1>Landing page</h1>
+
+
+    <!--Listing Button To navgate to the next screen-->
+    <div class="Listing-Button">
+        <form asp-controller="Home" asp-action="Listings" method="post">
+            <button class="custom-btn" STYLE="text-decoration: underline; font-size: 50px">
+                Check Out Our Units
+            </button>
+
+        </form>
+
+        <form asp-controller="Home" asp-action="Listings" method="post">
+            <button class="custom-btn" STYLE="text-decoration: underline; font-size: 50px">
+                Sign In
+            </button>
+
+        </form>
+    </div>
+
+
+</body>
+
+
+
