@@ -18,6 +18,13 @@ namespace NewDawnProperties.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Listings()
+        {
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
