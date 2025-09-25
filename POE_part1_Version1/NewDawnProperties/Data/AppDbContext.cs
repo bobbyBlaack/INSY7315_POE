@@ -17,6 +17,14 @@ namespace NewDawnProperties.Data
 
         public DbSet<UserModel> Users { get; set; }
 
+        public DbSet<LeaseModel> Leases { get; set; }
+
+        public DbSet<EscalationModel> Escalations { get; set; }
+
+        public DbSet<MaintenanceModel> Maintenance { get; set; }
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

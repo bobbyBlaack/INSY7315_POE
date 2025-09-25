@@ -25,6 +25,13 @@ namespace NewDawnProperties.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult SignIn()
+        {
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
