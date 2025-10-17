@@ -1,0 +1,112 @@
+﻿@{
+ViewData["Title"] = "Admin Dashboard";
+}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/admin.css">
+
+<h1>Admin Dashboard</h1>
+<div class="statistics-container">
+    <div class="stat-card">
+        <p>Tenants:</p>
+    </div>
+    <div class="stat-card">
+        <p>Properties: </p>
+    </div>
+    <div class="stat-card">
+        <p>Occupancy Rate: </p>
+    </div>
+    <div class="stat-card">
+        <p>Rent Collected: </p>
+    </div>
+    <div class="stat-card">
+        <p>Outstanding Rent: </p>
+    </div>
+    <div class="stat-card">
+        <p>Active Maintenance Requests: </p>
+    </div>
+</div>
+<br>
+<div class="box-container">
+    <div class="box">
+        <h2>Alerts &amp; Notifications</h2>
+
+        <div class="announcement-category">
+            <div class="category-header">
+                <span>Leases Expiring</span>
+            </div>
+            <div class="category-content">
+            </div>
+        </div>
+
+        <div class="announcement-category">
+            <div class="category-header">
+                <span>Overdue Rent</span>
+            </div>
+            <div class="category-content">
+            </div>
+        </div>
+
+        <div class="announcement-category">
+            <div class="category-header">
+                <span>Pending Maintenance</span>
+            </div>
+            <div class="category-content">
+            </div>
+        </div>
+
+        <div class="announcement-category">
+            <div class="category-header">
+                <span>Chatbot Escalations</span>
+            </div>
+            <div class="category-content">
+            </div>
+        </div>
+
+    </div><!--end of box-->
+
+    <div class="box">
+        <div class="box-header">
+            <div class="left-header">
+                <button class="property-button large">Select Property</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Property 1</li>
+                        <li>Property 2</li>
+                        <li>Property 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-header">
+                <button class="property-button">Tenants</button>
+                <button class="property-button">Payments</button>
+                <button class="property-button">Maintenance</button>
+            </div>
+
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tenants</th>
+                        <th>Payments</th>
+                        <th>Maintenance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>R4000</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> <!--end of box-->
+
+
+</div>
+<script src="/_framework/aspnetcore-browser-refresh.js"></script>
+
+
