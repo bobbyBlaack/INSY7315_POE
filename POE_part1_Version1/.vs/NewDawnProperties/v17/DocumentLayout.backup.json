@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\dilan\\source\\repos\\insy7315_poe\\poe_part1_version1\\newdawnproperties\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\dilan\\source\\repos\\insy7315_poe\\poe_part1_version1\\newdawnproperties\\views\\caretaker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\views\\caretaker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|c:\\users\\dilan\\source\\repos\\insy7315_poe\\poe_part1_version1\\newdawnproperties\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1AC65E97-E12E-42DF-A601-D1E57E962B22}|NewDawnProperties\\NewDawnProperties.csproj|solutionrelative:newdawnproperties\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T06:00:54.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Caretaker\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewDawnProperties\\Views\\Caretaker\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Caretaker\\Index.cshtml",
+              "RelativeToolTip": "NewDawnProperties\\Views\\Caretaker\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T06:37:44.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "NewDawnProperties\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "NewDawnProperties\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T06:37:55.139Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +76,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "NewDawnProperties\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T06:00:54.513Z",
-              "EditorCaption": ""
             }
           ]
         }
