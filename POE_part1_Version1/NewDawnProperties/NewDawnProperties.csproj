@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Caretaker\" />
     <Folder Include="Views\Tenant\" />
     <Folder Include="Views\PropManager\" />
   </ItemGroup>
