@@ -2,7 +2,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="landing-body">
+    <div class="overlay-container">
+        <!-- Login Section -->
+        <div class="login-card">
+            <h2>Login</h2>
+            <form asp-controller="Home" asp-action="SignIn" method="post" class="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+
+                <p>
+                    Don’t have an account?
+                    <a asp-controller="Account" asp-action="SignUp">Signup</a>
+                </p>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Listings Section -->
+        <div class="listing-card">
+            <div class="listing-content">
+                <h3>Look at available listings</h3>
+                <form asp-controller="Home" asp-action="Listings" method="post">
+                    <button type="submit" class="listing-btn">View Listings</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

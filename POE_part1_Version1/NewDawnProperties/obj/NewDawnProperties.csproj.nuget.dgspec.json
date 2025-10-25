@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj": {}
+    "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj": {}
   },
   "projects": {
-    "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj": {
+    "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
+        "projectUniqueName": "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
         "projectName": "NewDawnProperties",
-        "projectPath": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
-        "packagesPath": "C:\\Users\\USER-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Coding projects\\GitHub\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\obj\\",
+        "projectPath": "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
+        "packagesPath": "C:\\Users\\Tushar R\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USER-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tushar R\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -68,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

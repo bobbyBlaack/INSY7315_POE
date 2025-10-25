@@ -1,22 +1,433 @@
-html {
-  font-size: 14px;
+/*Style for the button and form it is in*/
+
+.Listing-Button {
+    padding-left: 550px;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 20px;
 }
 
-@media (min-width: 768px) {
-  html {
+.custom-btn {
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    font-family: Arial;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+    .custom-btn:hover {
+        background-color: #FFD580; 
+    }
+/* Landing page background */
+
+.landing-body {
+    background-image: url('../images/Background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Landing Page */
+
+.overlay-container {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Login Card */
+
+.login-card {
+    background-color: #f8d9a7;
+    padding: 40px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+}
+
+    .login-card h2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.login-card p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.login-card a {
+    color: blue;
+    text-decoration: none;
+}
+
+    .login-card a:hover {
+        text-decoration: underline;
+    }
+
+.login-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 100%;
     font-size: 16px;
-  }
+    cursor: pointer;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    .login-btn:hover {
+        background-color: #333;
+    }
+/* Listings Card */
+
+.listing-card {
+    background-color: rgba(255, 165, 0, 0.8);
+    padding: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.listing-content {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px;
+    width: 300px;
 }
 
-body {
-  margin-bottom: 60px;
+    .listing-content p {
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .listing-content h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+.listing-btn {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .listing-btn:hover {
+        background-color: #333;
+    }
+/* Sign-In Page */
+
+.signin-page {
+    height: 100vh;
+    background-image: url('../images/Background2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-card {
+    background-color: #f8d9a7;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .signin-card h2 {
+        margin-bottom: 20px;
+    }
+
+    .signin-card input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+
+@media (max-width: 900px) {
+    .overlay-container {
+        flex-direction: column;
+    }
+
+    .login-card, .listing-card {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+/* Sign Up Page */
+
+.signup-page {
+    background-image: url('../images/Background2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-card {
+    background-color: #FFD580;
+    border-radius: 20px;
+    padding: 40px 60px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+    .signup-card h1 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+    }
+
+.signup-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+    .form-column label {
+        margin-top: 15px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .form-column input, .form-column select {
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        padding: 10px 15px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+.form-divider {
+    width: 1px;
+    background-color: #999;
+    margin: 0 20px;
+}
+
+.signup-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+    .signup-actions p {
+        color: #000;
+    }
+
+    .signup-actions a {
+        color: blue;
+        text-decoration: none;
+    }
+
+        .signup-actions a:hover {
+            text-decoration: underline;
+        }
+
+.signup-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .signup-btn:hover {
+        background-color: #333;
+    }
+
+
+/* Listings Page */
+
+.listings-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/Background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px; /* adjust spacing from top if navbar visible */
+    box-sizing: border-box;
+}
+
+    .listings-page .overlay {
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3); 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+
+/* Main listings container */
+.listings-container {
+    background-color: rgba(255, 213, 128, 0.95); 
+    padding: 40px 60px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter bar section */
+.filter-bar-modern {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+    .filter-inputs input,
+    .filter-group input,
+    .filter-group select {
+        border: 1px solid #888;
+        border-radius: 15px;
+        padding: 6px 12px;
+        text-align: center;
+    }
+
+/* Title */
+.listings-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* Listings grid */
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Individual listing cards */
+.listing-card {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .listing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+.listing-image {
+    background-color: #ccc;
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Text inside cards */
+.listing-card p {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #333;
+}
+
+.listing-card a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .listing-card a:hover {
+        text-decoration: underline;
+    }
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .listings-container {
+        padding: 25px;
+    }
+
+    .filter-bar-modern {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }

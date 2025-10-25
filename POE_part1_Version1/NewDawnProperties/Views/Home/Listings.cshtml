@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Current Listings";
+}
+
+<div class="listings-page">
+    <div class="overlay">
+        <div class="listings-container">
+            <h1 class="listings-heading">Current Listings</h1>
+
+            <div class="filter-bar-modern">
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <div class="filter-inputs">
+                        <input type="number" placeholder="Min Amount">
+                        <span>-</span>
+                        <input type="number" placeholder="Max Amount">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Number of Rooms</label>
+                    <input type="number" placeholder="Any Number">
+                </div>
+
+                <div class="filter-group">
+                    <label>Location</label>
+                    <select>
+                        <option>All Locations</option>
+                        <option>Blue Hills</option>
+                        <option>Birchleigh</option>
+                        <option>Florida</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="listing-grid">
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <p>Beautiful 2-bedroom apartment in Blue Hills.</p>
+                    <a href="#">More details</a>
+                </div>
+
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <p>Spacious 3-bedroom family home in Birchleigh.</p>
+                    <a href="#">More details</a>
+                </div>
+
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <p>Luxury townhouse in Florida with private pool.</p>
+                    <a href="#">More details</a>
+                </div>
+
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <p>Modern studio apartment close to city center.</p>
+                    <a href="#">More details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

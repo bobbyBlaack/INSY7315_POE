@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="signup-page">
+    <div class="signup-card">
+        <h1>Sign up</h1>
+        <form method="post" class="signup-form">
+            <div class="form-column">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Password:</label>
+                <input type="password" name="password" required>
+
+                <label>Full Name:</label>
+                <input type="text" name="fullname" required>
+
+                <label>Phone number:</label>
+                <input type="tel" name="phone" required>
+            </div>
+
+            <div class="form-divider"></div>
+
+            <div class="form-column">
+                <label>Select Location:</label>
+                <select name="location" required>
+                    <option>Blue Hills</option>
+                    <option>Birchleigh</option>
+                    <option>Florida</option>
+                </select>
+
+                <label>Block/Building</label>
+                <input type="text" name="block">
+
+                <label>Unit Number</label>
+                <input type="text" name="unit">
+
+                <label>Security Code</label>
+                <input type="text" name="security" placeholder="Received via email from Property Manager/Admin">
+            </div>
+        </form>
+
+        <div class="signup-actions">
+            <p>
+                Already have an account?
+                <a asp-controller="Home" asp-action="Index">Login</a>
+            </p>
+            <button type="submit" class="signup-btn">Sign up</button>
+        </div>
+    </div>
+</div>
