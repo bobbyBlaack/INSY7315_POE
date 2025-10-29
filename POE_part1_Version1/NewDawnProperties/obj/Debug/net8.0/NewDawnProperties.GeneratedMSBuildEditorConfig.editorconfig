@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Coding projects\GitHub\INSY7315_POE\POE_part1_Version1\NewDawnProperties
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/ChatBot/myAiAssistant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdEJvdFxteUFpQXNzaXN0YW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Home/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
