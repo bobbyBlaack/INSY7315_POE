@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Escalations";
+}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/admin.css">
+<h1>Escalations</h1>
+<br />
+<div class="box-container">
+    <div class="box">
+        <h2>List of escalations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Issue</th>
+                    <th>Get Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                @* Temp data for testing *@
+                <tr>
+                    <td>08/08/2025</td>
+                    <td>S.John</td>
+                    <td>Maintenance Request</td>
+                    <td><a href="#">Get Details</a></td>
+                </tr>
+                
+                @*
+                @foreach (var escalation in Model)
+                {
+                    <tr>
+                        <td>@escalation.EscalationID</td>
+                        <td>@escalation.EscalationName</td>
+                        <td>@escalation.EscalationDescription</td>
+                        <td>@escalation.EscalationStatus</td>
+                    </tr>
+                } *@
+        </table>
+    </div> <!-- end of box -->
+
+    <div class="box">
+        <h2>Detailed Escalation</h2>
+        
+    </div> <!-- end of box -->
+</div>
