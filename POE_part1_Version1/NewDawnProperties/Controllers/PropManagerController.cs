@@ -2,9 +2,9 @@
 
 namespace NewDawnProperties.Controllers
 {
-    public class AdminController : Controller
+    public class PropManagerController : Controller
     {
-        public IActionResult AdminDashboard()
+        public IActionResult Index()
         {
             return View();
         }
