@@ -27,6 +27,51 @@
     opacity: 0; /* initial for fade-in */
 }
 
+/* ===== Typing Bubble ===== */
+.ai-typing {
+    align-self: flex-start;
+    display: flex;
+    gap: 3px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    background-color: #E6B566;
+    width: 50px;
+    justify-content: center;
+    animation: pulse 1s infinite;
+}
+
+    .ai-typing span {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: black;
+        border-radius: 50%;
+        animation: bounce 1s infinite;
+    }
+
+        .ai-typing span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .ai-typing span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .ai-typing span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+
 /* Button container */
 .Listing-Button {
     display: flex;
