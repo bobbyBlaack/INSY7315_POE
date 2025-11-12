@@ -2,14 +2,11 @@
 
 namespace NewDawnProperties.Controllers
 {
-    public class ChatBotController1 : Controller
+    public class PropManagerController : Controller
     {
-        public IActionResult myAiAssistant()
+        public IActionResult Index()
         {
             return View();
         }
-
-
-
     }
 }

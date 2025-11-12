@@ -1,6 +1,49 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "AI Assistant";
 }
-<h1>Ai page</h1>
+
+<div class="chat-container">
+    <div class="chat-box" id="chatBox">
+        <div class="chat-message ai-message">
+            👋 Hi there! I’m your NewDawn Assistant. How can I help you today?
+        </div>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="userInput" class="chat-input" placeholder="Type your message..." />
+        <button id="sendBtn" class="send-button">➤</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const chatBox = document.getElementById("chatBox");
+        const input = document.getElementById("userInput");
+        const sendBtn = document.getElementById("sendBtn");
+
+        sendBtn.addEventListener("click", async () => {
+            const message = input.value.trim();
+            if (!message) return;
+
+            appendMessage("user", message);
+            input.value = "";
+
+            const response = await fetch("/ChatBot/SendMessage", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams({ message })
+            });
+
+            const data = await response.json();
+            appendMessage("ai", data.response);
+        });
+
+        function appendMessage(sender, text) {
+            const msgDiv = document.createElement("div");
+            msgDiv.classList.add("chat-message", sender === "user" ? "user-message" : "ai-message");
+            msgDiv.textContent = text;
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    });
+</script>

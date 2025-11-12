@@ -4,7 +4,7 @@ namespace NewDawnProperties.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult AdminDashboard()
         {
             return View();
         }

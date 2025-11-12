@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Coding projects\GitHub\INSY7315_POE\POE_part1_Version1\NewDawnProperties
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Admin/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Caretaker/CaretakerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZXRha2VyXENhcmV0YWtlckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/ChatBot/AiTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdEJvdFxBaVRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/ChatBot/myAiAssistant.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdEJvdFxteUFpQXNzaXN0YW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,12 +62,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/PropManager/PropManDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcE1hbmFnZXJcUHJvcE1hbkRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/Tenant/TenantDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XFRlbmFudERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Coding projects/GitHub/INSY7315_POE/POE_part1_Version1/NewDawnProperties/Views/_ViewImports.cshtml]

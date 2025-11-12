@@ -6,29 +6,24 @@ namespace NewDawnProperties.Data
 {
     public class AppDbContext : DbContext
     {
+        
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
 
-        public DbSet <CaretakerAssignmentModel> CaretakerAssignment {  get; set; }
-
+        public DbSet<CaretakerAssignmentModel> CaretakerAssignment { get; set; }
         public DbSet<PropertyModel> Property { get; set; }
-
         public DbSet<RoomModel> Rooms { get; set; }
-
         public DbSet<TenantAssignmentModel> TenantAssignment { get; set; }
-
         public DbSet<UserModel> Users { get; set; }
-
         public DbSet<LeaseModel> Leases { get; set; }
-
         public DbSet<EscalationModel> Escalations { get; set; }
-
         public DbSet<MaintenanceModel> Maintenance { get; set; }
-
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            base.OnModelCreating(modelBuilder);
         }
-
     }
 }

@@ -1,1 +1,156 @@
-﻿<h1>Sign in</h1>
+﻿@model NewDawnProperties.Models.UserModel
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+<head>
+
+    <style>
+
+        /* Page background (same as landing) */
+        .landing-body {
+            background-image: url('../images/paul-hanaoka-5za2ss955yg-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Sign-in container */
+        .signin-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 40px 60px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        /* Title */
+        .signin-title {
+            color: black;
+            font-size: 36px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #FF9D00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Form fields */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+                color: black;
+            }
+
+        .form-control1 {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #FFD580;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+            .form-control:focus {
+                border-color: #FF9D00;
+            }
+
+        /* Buttons */
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        .custom-btn1 {
+            width: 48%;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: none;
+            background-color: #FF9D00;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .custom-btn:hover {
+                background-color: #FFD580;
+                transform: scale(1.05);
+            }
+
+        .custom-btn-alt {
+            width: 48%;
+            text-align: center;
+            background-color: white;
+            border: 2px solid #FF9D00;
+            border-radius: 10px;
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: 0.3s;
+        }
+
+            .custom-btn-alt:hover {
+                background-color: #FFD580;
+            }
+
+        /* Forgot password link */
+        .forgot-password {
+            margin-top: 15px;
+        }
+
+            .forgot-password a {
+                color: #FF9D00;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                .forgot-password a:hover {
+                    text-decoration: underline;
+                }
+
+
+    </style>
+
+</head>
+
+<body class="landing-body">
+
+    <div class="signin-container" style="margin-left:400px">
+        <h1 class="signin-title">Sign In</h1>
+
+        <form asp-action="VerifyUser" asp-controller="Home" method="post" class="signin-form">
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input asp-for="Email" type="email" id="Email" name="Email" class="form-control" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input asp-for="Password" type="password" id="Password" name="Password" class="form-control1" placeholder="Enter your password" required />
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="custom-btn1">Sign In</button>
+                <a asp-action="CreateAccount" asp-controller="Home" class="custom-btn-alt">Create Account</a>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+</body>
