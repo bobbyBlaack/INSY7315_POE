@@ -1,1 +1,159 @@
-﻿<h1>Create Account</h1>
+﻿@model NewDawnProperties.Models.UserModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<head>
+    <style>
+        /* Page background (same as landing) */
+        .landing-body {
+            background-image: url('../images/paul-hanaoka-5za2ss955yg-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Sign-in / create-account container */
+        .signin-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 40px 60px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        /* Title */
+        .signin-title {
+            color: black;
+            font-size: 36px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #FF9D00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Form fields */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+                color: black;
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #FFD580;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+            .form-control:focus {
+                border-color: #FF9D00;
+            }
+
+        /* Buttons */
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        .custom-btn1 {
+            width: 48%;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: none;
+            background-color: #FF9D00;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .custom-btn1:hover {
+                background-color: #FFD580;
+                transform: scale(1.05);
+            }
+
+        .custom-btn-alt {
+            width: 48%;
+            text-align: center;
+            background-color: white;
+            border: 2px solid #FF9D00;
+            border-radius: 10px;
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: 0.3s;
+        }
+
+            .custom-btn-alt:hover {
+                background-color: #FFD580;
+            }
+    </style>
+</head>
+
+<body class="landing-body">
+    <div class="signin-container">
+        <h1 class="signin-title">Create Account</h1>
+
+        <form asp-action="RegisterAccount" asp-controller="Home" method="post" class="signin-form">
+            <div class="form-group">
+                <label for="FName">First Name</label>
+                <input asp-for="FName" class="form-control" placeholder="Enter your first name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="SName">Surname</label>
+                <input asp-for="SName" class="form-control" placeholder="Enter your surname" required />
+            </div>
+
+            <div class="form-group">
+                <label for="UserName">Username</label>
+                <input asp-for="UserName" class="form-control" placeholder="Choose a username" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Enter your phone number" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Choose a password" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Role">Role</label>
+                <select asp-for="Role" class="form-control" required>
+                    <option value="" disabled selected>Select role</option>
+                    <option value="Tenant">Tenant</option>
+                    <option value="PropManager">PropManager</option>
+                    <option value="Caretaker">Caretaker</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="custom-btn1">Create Account</button>
+                <a asp-action="SignIn" asp-controller="Home" class="custom-btn-alt">Sign In</a>
+            </div>
+        </form>
+    </div>
+</body>

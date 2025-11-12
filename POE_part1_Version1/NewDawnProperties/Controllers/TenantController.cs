@@ -4,7 +4,7 @@ namespace NewDawnProperties.Controllers
 {
     public class TenantController : Controller
     {
-        public IActionResult Index()
+        public IActionResult TenantDashboard()
         {
             return View();
         }

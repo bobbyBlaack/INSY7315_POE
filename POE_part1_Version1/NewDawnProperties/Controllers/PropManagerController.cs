@@ -4,7 +4,7 @@ namespace NewDawnProperties.Controllers
 {
     public class PropManagerController : Controller
     {
-        public IActionResult Index()
+        public IActionResult PropManDashboard()
         {
             return View();
         }

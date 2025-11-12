@@ -4,7 +4,7 @@ namespace NewDawnProperties.Controllers
 {
     public class CareTakerController : Controller
     {
-        public IActionResult Index()
+        public IActionResult CaretakerDashboard()
         {
             return View();
         }
