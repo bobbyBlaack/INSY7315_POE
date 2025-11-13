@@ -56,6 +56,12 @@ obj/
 ######################
 # Logs and databases #
 ######################
+# ========================
+# SQLite
+# ========================
+NewDawnProperties/NewDawnProperty.db
+NewDawnProperties/NewDawnProperty.db-shm
+NewDawnProperties/NewDawnProperty.db-wal
 *.log
 *.sqlite
 # OS generated files #
