@@ -27,6 +27,15 @@ Release/
 *.log
 *.tlog
 
+# ========================
+# SQLite
+# ========================
+NewDawnProperties/NewDawnProperty.db
+NewDawnProperties/NewDawnProperty.db-shm
+NewDawnProperties/NewDawnProperty.db-wal
+*.log
+*.sqlite
+
 # ==============================
 # Temporary / Cache
 # ==============================
