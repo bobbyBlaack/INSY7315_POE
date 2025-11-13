@@ -3,13 +3,24 @@
 
 @{
     ViewData["Title"] = "Caretaker Dashboard";
+
     var pendingTasks = ViewBag.PendingTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
     var inProgressTasks = ViewBag.InProgressTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
     var completedTasks = ViewBag.CompletedTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
+
+    Func<string, string> formatStatus = status =>
+    {
+        return status.ToLower() switch
+        {
+            "open" => "Pending",
+            "inprogress" => "In Progress",
+            "closed" => "Completed",
+            _ => status
+        };
+    };
 }
 
 <div class="caretaker-dashboard container-fluid py-4 position-relative">
-
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
@@ -44,9 +55,7 @@
         <button class="btn btn-dark"><i class="bi bi-search"></i></button>
     </div>
 
-    <!-- Task Sections -->
     <div class="row g-4">
-
         <!-- Pending -->
         <div class="col-lg-4">
             <div class="card shadow-lg border-0 rounded-4">
@@ -55,30 +64,26 @@
                     <span class="badge bg-dark">@pendingTasks.Count</span>
                 </div>
                 <div class="card-body bg-light" id="activeTasksContainer">
-                    @if (pendingTasks.Any())
+
+                    @foreach (var task in pendingTasks)
                     {
-                        foreach (var task in pendingTasks)
-                        {
-                            <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
-                                 data-description="@task.Description"
-                                 data-status="@task.Status"
-                                 data-created="@task.CreatedAt">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="fw-semibold mb-1">@task.Description</h5>
-                                        <p class="small text-muted mb-0">
-                                            Unit: @task.UnitID <br />
-                                            Created: @task.CreatedAt.ToString("yyyy-MM-dd")
-                                        </p>
-                                    </div>
-                                    <span class="badge bg-warning text-dark">@task.Status</span>
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description"
+                             data-status="@task.Status">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fw-semibold mb-1">@task.Description</h5>
+                                    <p class="small text-muted mb-0">
+                                        Unit: @task.UnitID <br />
+                                        Created: @task.CreatedAt.ToString("yyyy-MM-dd")
+                                    </p>
                                 </div>
+
+                                <span class="badge bg-warning text-dark">@formatStatus(task.Status)</span>
                             </div>
-                        }
-                    }
-                    else
-                    {
-                        <p class="text-muted">No pending tasks.</p>
+
+                        </div>
                     }
                 </div>
             </div>
@@ -92,30 +97,26 @@
                     <span class="badge bg-dark">@inProgressTasks.Count</span>
                 </div>
                 <div class="card-body bg-light" id="progressTasksContainer">
-                    @if (inProgressTasks.Any())
+
+                    @foreach (var task in inProgressTasks)
                     {
-                        foreach (var task in inProgressTasks)
-                        {
-                            <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
-                                 data-description="@task.Description"
-                                 data-status="@task.Status"
-                                 data-created="@task.CreatedAt">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="fw-semibold mb-1">@task.Description</h5>
-                                        <p class="small text-muted mb-0">
-                                            Unit: @task.UnitID <br />
-                                            Started: @task.CreatedAt.ToString("yyyy-MM-dd")
-                                        </p>
-                                    </div>
-                                    <span class="badge bg-info">@task.Status</span>
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description"
+                             data-status="@task.Status">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fw-semibold mb-1">@task.Description</h5>
+                                    <p class="small text-muted mb-0">
+                                        Unit: @task.UnitID <br />
+                                        Started: @task.CreatedAt.ToString("yyyy-MM-dd")
+                                    </p>
                                 </div>
+
+                                <span class="badge bg-info">@formatStatus(task.Status)</span>
                             </div>
-                        }
-                    }
-                    else
-                    {
-                        <p class="text-muted">No tasks in progress.</p>
+
+                        </div>
                     }
                 </div>
             </div>
@@ -128,31 +129,37 @@
                     <h4 class="mb-0"><i class="bi bi-check2-circle me-2"></i>Completed</h4>
                     <span class="badge bg-dark">@completedTasks.Count</span>
                 </div>
+
                 <div class="card-body bg-light" id="completedTasksContainer">
-                    @if (completedTasks.Any())
+                    @foreach (var task in completedTasks)
                     {
-                        foreach (var task in completedTasks)
-                        {
-                            <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
-                                 data-description="@task.Description"
-                                 data-status="@task.Status">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h6 class="fw-semibold text-success">@task.Description</h6>
-                                        <p class="small text-muted">Completed</p>
-                                    </div>
-                                    <span class="badge bg-success">@task.Status</span>
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6 class="fw-semibold text-success">@task.Description</h6>
+                                    <p class="small text-muted">Completed</p>
                                 </div>
+
+                                <span class="badge bg-success">@formatStatus(task.Status)</span>
                             </div>
-                        }
-                    }
-                    else
-                    {
-                        <p>No completed tasks.</p>
+
+                        </div>
                     }
                 </div>
+
             </div>
         </div>
-
     </div>
 </div>
+
+<script>
+    // Search filter
+    document.getElementById('taskSearch').addEventListener('input', function (e) {
+        const term = e.target.value.toLowerCase();
+        document.querySelectorAll('.task-card').forEach(card => {
+            card.style.display = card.textContent.toLowerCase().includes(term) ? '' : 'none';
+        });
+    });
+</script>

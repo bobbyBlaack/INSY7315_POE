@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
 
 namespace NewDawnProperties.Models
 {
@@ -12,7 +12,7 @@ namespace NewDawnProperties.Models
         public string PropertyID { get; set; }
         public string UnitID { get; set; }
         public string TenantID { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; }       // open, inprogress, closed
         public string Urgency { get; set; }
     }
 

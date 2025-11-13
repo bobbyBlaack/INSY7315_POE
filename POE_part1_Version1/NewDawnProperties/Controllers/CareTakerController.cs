@@ -21,15 +21,18 @@ namespace NewDawnProperties.Controllers
             {
                 var tasks = await _apiService.GetCaretakerTasksAsync();
 
-                // Match API’s actual status values
-                var pendingTasks = tasks.Where(t =>
-                    t.Status.Equals("open", StringComparison.OrdinalIgnoreCase)).ToList();
+                // Firebase → MVC mapping
+                var pendingTasks = tasks
+                    .Where(t => t.Status.Equals("open", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
 
-                var inProgressTasks = tasks.Where(t =>
-                    t.Status.Equals("inprogress", StringComparison.OrdinalIgnoreCase)).ToList();
+                var inProgressTasks = tasks
+                    .Where(t => t.Status.Equals("inprogress", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
 
-                var completedTasks = tasks.Where(t =>
-                    t.Status.Equals("closed", StringComparison.OrdinalIgnoreCase)).ToList();
+                var completedTasks = tasks
+                    .Where(t => t.Status.Equals("closed", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
 
                 ViewBag.PendingTasks = pendingTasks;
                 ViewBag.InProgressTasks = inProgressTasks;
