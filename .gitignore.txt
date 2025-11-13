@@ -1,0 +1,1115 @@
+"/api/Units/{propertyId}/{unitId}": {
+      "get": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Units/add/tenant/mobile/{propertyName}/{unitId}": {
+      "put": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Units/remove/tenant/mobile/{propertyName}/{unitId}": {
+      "put": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/mobile/admin/{uid}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Users/mobile/user/list/{uid}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsersMessageModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsersMessageModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsersMessageModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Users": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/{id}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserModel"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddApplicationModel": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddInvoiceModel": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "uid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddMessageModel": {
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiverEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdminUserModel": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "userType": {
+            "type": "string",
+            "nullable": true
+          },
+          "located": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApplicationModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyID": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "submittedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateMaintenanceRequestModel": {
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "urgency": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InvoiceModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "leaseID": {
+            "type": "string",
+            "nullable": true
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LeaseModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "deposit": {
+            "type": "number",
+            "format": "double"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyID": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          },
+          "rentAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaintenanceRequestModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "assignedTo": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyID": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "urgency": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ManagerDashboardModel": {
+        "type": "object",
+        "properties": {
+          "tenantCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "occupancyRate": {
+            "type": "string",
+            "nullable": true
+          },
+          "leasesExpiringSoon": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalRentCollectedThisMonth": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalOutstandingRent": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maintenanceRequestsCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MessageModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "chatID": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "senderID": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiverID": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfileUpdateModel": {
+        "type": "object",
+        "properties": {
+          "theme": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "property": {
+            "type": "string",
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertyMobileModel": {
+        "type": "object",
+        "properties": {
+          "isAvailable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "unitNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertyModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertySummary": {
+        "type": "object",
+        "properties": {
+          "propertyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "maintenanceInProgress": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maintenanceCompleted": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "leasesActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "leasesInactive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "applicationsPending": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "applicationsApproved": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "applicationsRejected": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "unpaidInvoices": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paidInvoices": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "workersActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "workersInactive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "managers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "caretakers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReportModel": {
+        "type": "object",
+        "properties": {
+          "totalProperties": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalUsers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalWorkers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "adminWorkers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "managerWorkers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "caretakerWorkers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "activeLeases": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "inactiveLeases": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "aiEscalationsActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "aiEscalationsResolved": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "propertySummaries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PropertySummary"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TenantDashboardModel": {
+        "type": "object",
+        "properties": {
+          "latestInvoiceStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "latestInvoiceDueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "latestInvoiceAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "activeMaintenanceCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAvailable": {
+            "type": "boolean"
+          },
+          "leaseID": {
+            "type": "string",
+            "nullable": true
+          },
+          "rentAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateMaintenanceRequestModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePropertyListing": {
+        "type": "object",
+        "properties": {
+          "ammenties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "isAvailable": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUnitAndLeaseModel": {
+        "type": "object",
+        "properties": {
+          "rentAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "deposit": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "located": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "userType": {
+            "type": "string",
+            "nullable": true
+          },
+          "preferences": {
+            "type": "object",
+            "additionalProperties": { },
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsersMessageModel": {
+        "type": "object",
+        "properties": {
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Caretaker\" />
     <Folder Include="Views\Tenant\" />
     <Folder Include="Views\PropManager\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="System.Net.Http.Json" Version="9.0.10" />
   </ItemGroup>
 
 </Project>

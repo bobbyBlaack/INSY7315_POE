@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = Localizer["Profile"];
+}
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<div class="profile-page">
+    <div class="overlay">
+        <div class="profile-container">
+            <h1 class="profile-heading">@Localizer["MyProfile"]</h1>
+
+            <div class="profile-box">
+                <div class="profile-header">
+                    <div class="profile-details">
+                        <h2>@ViewBag.UserName</h2>
+                        <p class="email">@ViewBag.Email</p>
+
+                        @if (!string.IsNullOrEmpty(ViewBag.Unit))
+                        {
+                            <p class="profile-info">@Localizer["UnitNumber"]: @ViewBag.Unit</p>
+                        }
+                        else if (!string.IsNullOrEmpty(ViewBag.Block))
+                        {
+                            <p class="profile-info">@Localizer["BlockBuilding"]: @ViewBag.Block</p>
+                        }
+                        else
+                        {
+                            <p class="profile-info">@Localizer["NoUnitOrBlock"]</p>
+                        }
+                    </div>
+                </div>
+
+                <div class="profile-sections">
+                    <!-- Language Section -->
+                    <div class="profile-section language">
+                        <h3>@Localizer["MultiLanguage"]</h3>
+                        <p>@Localizer["SelectLanguage"]</p>
+                        <select class="form-select profile-btn" id="languageSelect">
+                            <option value="en" selected>@Localizer["English"]</option>
+                            <option value="af">@Localizer["Afrikaans"]</option>
+                        </select>
+                    </div>
+
+                    <!-- Privacy Section -->
+                    <div class="profile-section privacy">
+                        <h3>@Localizer["Privacy"]</h3>
+                        <p>@Localizer["PrivacyDescription"]</p>
+                        <a asp-controller="Home" asp-action="Privacy" class="profile-btn privacy-link">
+                            @Localizer["ViewPrivacyPolicy"]
+                        </a>
+                    </div>
+
+                    <!-- Logout Section -->
+                    <div class="profile-section logout">
+                        <h3>@Localizer["Logout"]</h3>
+                        <p>@Localizer["LogoutDescription"]</p>
+
+                        <form asp-controller="Home" asp-action="SignOut" method="post">
+                            <button type="submit" class="logout-btn">@Localizer["LogoutButton"]</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('languageSelect').addEventListener('change', function () {
+            const selectedLang = this.value;
+            const returnUrl = window.location.pathname;
+            fetch('/Home/SetLanguage', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `culture=${selectedLang}&returnUrl=${returnUrl}`
+            }).then(() => {
+                window.location.reload();
+            });
+        });
+    </script>
+}

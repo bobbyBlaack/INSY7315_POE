@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XvsVtSzYo4w=",
+  "dgSpecHash": "ki6wsMmhIJM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tushar R\\source\\repos\\UpdatedPOE\\INSY7315_POE\\POE_part1_Version1\\NewDawnProperties\\NewDawnProperties.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Tushar R\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\Tushar R\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
+    "C:\\Users\\Tushar R\\.nuget\\packages\\system.net.http.json\\9.0.10\\system.net.http.json.9.0.10.nupkg.sha512",
+    "C:\\Users\\Tushar R\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",
+    "C:\\Users\\Tushar R\\.nuget\\packages\\system.text.json\\9.0.10\\system.text.json.9.0.10.nupkg.sha512"
+  ],
   "logs": []
 }

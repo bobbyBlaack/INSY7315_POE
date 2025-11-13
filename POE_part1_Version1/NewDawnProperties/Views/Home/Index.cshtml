@@ -1,33 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = Localizer["HomePage"];
 }
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
 
 <div class="landing-body">
     <div class="overlay-container">
         <!-- Login Section -->
         <div class="login-card">
-            <h2>Login</h2>
+            <h2>@Localizer["Login"]</h2>
             <form asp-controller="Home" asp-action="SignIn" method="post" class="login-form">
-                <label for="email">Email:</label>
+                <label for="email">@Localizer["Email"]:</label>
                 <input type="email" id="email" name="email" required />
 
-                <label for="password">Password:</label>
+                <label for="password">@Localizer["Password"]:</label>
                 <input type="password" id="password" name="password" required />
 
                 <p>
-                    Don’t have an account?
-                    <a asp-controller="Account" asp-action="SignUp">Signup</a>
+                    @Localizer["DontHaveAccount"]
+                    <a asp-controller="Account" asp-action="SignUp">@Localizer["SignUp"]</a>
                 </p>
-                <button type="submit" class="login-btn">Login</button>
+                <button type="submit" class="login-btn">@Localizer["LoginButton"]</button>
             </form>
         </div>
 
         <!-- Listings Section -->
         <div class="listing-card">
             <div class="listing-content">
-                <h3>Look at available listings</h3>
-                <form asp-controller="Home" asp-action="Listings" method="post">
-                    <button type="submit" class="listing-btn">View Listings</button>
+                <h3>@Localizer["AvailableListings"]</h3>
+                <form asp-controller="Home" asp-action="Listings" method="get">
+                    <button type="submit" class="listing-btn">@Localizer["ViewListings"]</button>
                 </form>
             </div>
         </div>
