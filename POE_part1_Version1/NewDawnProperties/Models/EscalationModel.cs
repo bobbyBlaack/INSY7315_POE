@@ -13,7 +13,7 @@ namespace NewDawnProperties.Models
         [Key]
         public int EscalationId { get; set; }
 
-        public DateOnly EscalationDate { get; set; }
+        public DateTime EscalationDate { get; set; }
 
         public int RoomId { get; set; }
 

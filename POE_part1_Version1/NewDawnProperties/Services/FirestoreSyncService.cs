@@ -23,11 +23,23 @@ namespace NewDawnProperties.Services
         // Full initial sync
         public async Task FullSyncAsync()
         {
-            // Property table
+            await SyncProperties();
+            await SyncLeases();
+            await SyncMaintenance();
+            await SyncEscalations();
+            await SyncRooms();
+            await SyncTenantAssignments();
+            await SyncCaretakerAssignments();
+            await SyncUsers();
+
+            await _context.SaveChangesAsync();
+        }
+
+        private async Task SyncProperties()
+        {
             foreach (var property in _context.Property)
             {
-                var docRef = _firestoreDb.Collection("Properties")
-                                          .Document(property.PropID.ToString());
+                var docRef = _firestoreDb.Collection("Properties").Document(property.PropID.ToString());
 
                 await docRef.SetAsync(new
                 {
@@ -37,39 +49,44 @@ namespace NewDawnProperties.Services
                     property.City,
                     property.UserID,
                     property.RoomsCount,
-                    ListImage = Convert.ToBase64String(property.ListImage),
-                    ListVideo = Convert.ToBase64String(property.ListVideo)
+                    ListImage = property.ListImage != null ? Convert.ToBase64String(property.ListImage) : null,
+                    ListVideo = property.ListVideo != null ? Convert.ToBase64String(property.ListVideo) : null,
+                    property.IsSynced
                 });
 
                 property.IsSynced = true;
             }
+        }
 
-            // Leases
+        private async Task SyncLeases()
+        {
             foreach (var lease in _context.Leases)
             {
-                var docRef = _firestoreDb.Collection("Leases")
-                                          .Document(lease.LeaseID.ToString());
+                var docRef = _firestoreDb.Collection("Leases").Document(lease.LeaseID.ToString());
 
                 await docRef.SetAsync(new
                 {
                     lease.LeaseStatus,
-                    lease.LeaseStart,
-                    lease.LeaseEnd,
+                    LeaseStart = lease.LeaseStart.ToUniversalTime(), // convert to UTC
+                    LeaseEnd = lease.LeaseEnd.ToUniversalTime(),     // convert to UTC
                     lease.RentAmount,
                     lease.UserId,
                     lease.Role,
                     lease.LeaseAction,
-                    lease.RoomId
+                    lease.RoomId,
+                    lease.IsSynced
                 });
 
                 lease.IsSynced = true;
             }
+        }
 
-            // Maintenance
+
+        private async Task SyncMaintenance()
+        {
             foreach (var maintenance in _context.Maintenance)
             {
-                var docRef = _firestoreDb.Collection("Maintenance")
-                                          .Document(maintenance.MaintenanceId.ToString());
+                var docRef = _firestoreDb.Collection("Maintenance").Document(maintenance.MaintenanceId.ToString());
 
                 await docRef.SetAsync(new
                 {
@@ -77,66 +94,75 @@ namespace NewDawnProperties.Services
                     maintenance.UserRole,
                     maintenance.Description,
                     maintenance.Type,
-                    maintenance.MaintenanceDate,
+                    MaintenanceDate = maintenance.MaintenanceDate.ToUniversalTime(),
                     maintenance.RoomID,
                     maintenance.PropID,
-                    maintenance.Status
+                    maintenance.Status,
+                    maintenance.IsSynced
                 });
 
                 maintenance.IsSynced = true;
             }
+        }
 
-            // Escalations
+        private async Task SyncEscalations()
+        {
             foreach (var escalation in _context.Escalations)
             {
-                var docRef = _firestoreDb.Collection("Escalations")
-                                          .Document(escalation.EscalationId.ToString());
+                var docRef = _firestoreDb.Collection("Escalations").Document(escalation.EscalationId.ToString());
 
                 await docRef.SetAsync(new
                 {
-                    escalation.EscalationDate,
+                    EscalationDate = escalation.EscalationDate.ToUniversalTime(),
                     escalation.RoomId,
                     escalation.UserId,
                     escalation.Category,
                     escalation.Summary,
-                    escalation.Actions
+                    escalation.Actions,
+                    escalation.IsSynced
                 });
 
                 escalation.IsSynced = true;
             }
+        }
 
-            // Rooms
+        private async Task SyncRooms()
+        {
             foreach (var room in _context.Rooms)
             {
-                var docRef = _firestoreDb.Collection("Rooms")
-                                          .Document(room.RoomID.ToString());
+                var docRef = _firestoreDb.Collection("Rooms").Document(room.RoomID.ToString());
 
                 await docRef.SetAsync(new
                 {
                     room.Block,
-                    room.PropID
+                    room.PropID,
+                    room.IsSynced
                 });
 
                 room.IsSynced = true;
             }
+        }
 
-            // TenantAssignment
+        private async Task SyncTenantAssignments()
+        {
             foreach (var tenant in _context.TenantAssignment)
             {
-                var docRef = _firestoreDb.Collection("TenantAssignments")
-                                          .Document(tenant.TenantAssignment.ToString());
+                var docRef = _firestoreDb.Collection("TenantAssignments").Document(tenant.TenantAssignment.ToString());
 
                 await docRef.SetAsync(new
                 {
                     tenant.UserID,
                     tenant.PropID,
-                    tenant.RoomID
+                    tenant.RoomID,
+                    tenant.IsSynced
                 });
 
                 tenant.IsSynced = true;
             }
+        }
 
-            // CaretakerAssignment
+        private async Task SyncCaretakerAssignments()
+        {
             foreach (var caretaker in _context.CaretakerAssignment)
             {
                 var docRef = _firestoreDb.Collection("CaretakerAssignments")
@@ -145,17 +171,19 @@ namespace NewDawnProperties.Services
                 await docRef.SetAsync(new
                 {
                     caretaker.UserID,
-                    caretaker.PropID
+                    caretaker.PropID,
+                    caretaker.IsSynced
                 });
 
                 caretaker.IsSynced = true;
             }
+        }
 
-            // Users
+        private async Task SyncUsers()
+        {
             foreach (var user in _context.Users)
             {
-                var docRef = _firestoreDb.Collection("Users")
-                                          .Document(user.UserID.ToString());
+                var docRef = _firestoreDb.Collection("Users").Document(user.UserID.ToString());
 
                 await docRef.SetAsync(new
                 {
@@ -165,25 +193,21 @@ namespace NewDawnProperties.Services
                     user.PhoneNumber,
                     user.Role,
                     user.FName,
-                    user.SName
+                    user.SName,
+                    user.IsSynced
                 });
 
                 user.IsSynced = true;
             }
-
-            // Save all changes to mark as synced
-            await _context.SaveChangesAsync();
         }
 
-
-        // Incremental sync
+        // Incremental sync example for properties
         public async Task IncrementalSyncAsync()
         {
             var unsyncedProps = _context.Property.Where(p => !p.IsSynced).ToList();
             foreach (var property in unsyncedProps)
             {
-                DocumentReference docRef = _firestoreDb.Collection("Properties")
-                                                      .Document(property.PropID.ToString());
+                var docRef = _firestoreDb.Collection("Properties").Document(property.PropID.ToString());
 
                 await docRef.SetAsync(new
                 {
@@ -193,8 +217,9 @@ namespace NewDawnProperties.Services
                     property.City,
                     property.UserID,
                     property.RoomsCount,
-                    ListImage = Convert.ToBase64String(property.ListImage),
-                    ListVideo = Convert.ToBase64String(property.ListVideo)
+                    ListImage = property.ListImage != null ? Convert.ToBase64String(property.ListImage) : null,
+                    ListVideo = property.ListVideo != null ? Convert.ToBase64String(property.ListVideo) : null,
+                    property.IsSynced
                 });
 
                 property.IsSynced = true;
