@@ -5,42 +5,40 @@ using OpenAI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ===== Add services to the container =====
 builder.Services.AddControllersWithViews();
 
-//ollama service to register it on startup
-builder.Services.AddHttpClient<NewDawnProperties.Services.OllamaService>();
-builder.Services.AddHttpClient<OllamaService>(); 
+// Ollama HTTP client service registration
+builder.Services.AddHttpClient<OllamaService>();
 builder.Services.AddHttpClient();
 
-
-//registration for the database
+// Database registration
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//addding session support
-builder.Services.AddDistributedMemoryCache(); // session storage in memory
+// ===== Session configuration =====
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // session timeout
-    options.Cookie.HttpOnly = true; // prevent client-side access
-    options.Cookie.IsEssential = true; // required for GDPR compliance
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
-builder.Services.AddSingleton<OpenAI.OpenAIClient>(sp =>
+// ===== OpenAI service registration =====
+builder.Services.AddSingleton<OpenAIClient>(sp =>
 {
     var config = sp.GetRequiredService<IConfiguration>();
     var apiKey = config["OpenAI:ApiKey"];
-    return new OpenAI.OpenAIClient(apiKey);
+    return new OpenAIClient(apiKey);
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ===== Configure middleware pipeline =====
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -48,9 +46,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+
 app.UseSession();
+
 app.UseAuthorization();
 
+// ===== Routing =====
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

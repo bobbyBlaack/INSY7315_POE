@@ -1,1 +1,221 @@
-﻿<h1>Dashboard for prop man</h1>
+﻿@model List<NewDawnProperties.Models.PropertyModel>
+
+@{
+    ViewData["Title"] = "Property Manager Dashboard";
+}
+
+<head>
+    <style>
+        /* ===== Navbar ===== */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E6B566;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+            #navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 10px 15px;
+                transition: color 0.3s;
+            }
+
+                #navbar a:hover {
+                    color: white;
+                }
+
+            #navbar #logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        /* ===== Page Layout ===== */
+        #dashboard-container {
+            margin-top: 80px; /* space for fixed navbar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* ===== Top Summary Section ===== */
+        #summary-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #property-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .summary-box {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 15px;
+            min-width: 120px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* ===== Middle Section Grid ===== */
+        #middle-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .scroll-box {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* ===== Bottom Section Grid ===== */
+        #bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        #recent-activity, #notes-box {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            min-height: 250px;
+            overflow-y: auto;
+        }
+
+        #notes-textarea {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        /* ===== Floating AI Chatbot Icon ===== */
+        #ai-chatbot {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #FF9D00;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+            #ai-chatbot:hover {
+                transform: scale(1.1);
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <div id="navbar">
+        <a href="#" id="logo">Company Logo</a>
+        <a asp-action="PropManDashboard">Dashboard</a>
+        <a asp-action="ManagerListing">Update Listings</a>
+        <a asp-action="ManagerLease">Manage Leases</a>
+        <a asp-action="ManagerEscalation">Escalations</a>
+        <a asp-action="ManagerNotif">Notifications</a>
+        <a asp-controller="Home" asp-action="Profile">Profile</a>
+    </div>
+
+    <!-- ===== Main Dashboard Container ===== -->
+    <div id="dashboard-container">
+
+        <div id="summary-section">
+            <h1 id="property-title">Your Properties</h1>
+        </div>
+
+        <div id="middle-section">
+            @foreach (var property in Model)
+            {
+                <div class="scroll-box" style="background-color: lightgray;">
+                    <h3>@property.PropName</h3>
+                    <p><strong>Price:</strong> @property.ListPrice</p>
+                    <p><strong>City:</strong> @property.City</p>
+                    <p><strong>Rooms:</strong> @property.RoomsCount</p>
+                    <p><strong>Address:</strong> @property.Address</p>
+
+                    <img src="data:image/png;base64,@Convert.ToBase64String(property.ListImage)" alt="Property Image" style="width:100%; border-radius:8px; margin-top:5px;" />
+                </div>
+            }
+
+            <div class="scroll-box" id="payment-box" style="background-color:lightgray">
+                <h3>Payment Summary</h3>
+                <p>Filter and data will go here...</p>
+            </div>
+
+            <div class="scroll-box" id="maintenance-box" style="background-color:lightgray">
+                <h3>Maintenance Overview</h3>
+                <ul>
+                    <li>Request 1 - Pending - 2025-11-12</li>
+                    <li>Request 2 - Completed - 2025-11-10</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div id="bottom-section">
+            <div id="recent-activity" style="background-color:lightgray">
+                <h3>Recent Activity</h3>
+            </div>
+
+            <div id="notes-box" style="background-color:lightgray">
+                <h3>Notes</h3>
+                <textarea id="notes-textarea" placeholder="Write notes here..."></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Floating AI Chatbot Icon -->
+    <div id="ai-chatbot" onclick="window.location.href='/ChatBot/myAiAssistant'">🤖</div>
+
+    <!-- ===== Optional jQuery Scripts ===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Dynamically add recent activity when tenant is clicked
+        $('#tenants-box li').click(function () {
+            let tenantName = $(this).text();
+            $('#recent-activity').append('<p>Clicked on ' + tenantName + ' at ' + new Date().toLocaleTimeString() + '</p>');
+        });
+
+        // Store notes in localStorage
+        $('#notes-textarea').on('input', function () {
+            localStorage.setItem('propertyNotes', $(this).val());
+        });
+
+        // Load saved notes
+        $(document).ready(function () {
+            let savedNotes = localStorage.getItem('propertyNotes');
+            if (savedNotes) {
+                $('#notes-textarea').val(savedNotes);
+            }
+        });
+    </script>
+</body>

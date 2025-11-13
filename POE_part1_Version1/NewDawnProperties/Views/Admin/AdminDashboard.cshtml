@@ -73,6 +73,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr; /* Tenant list larger, payments & maintenance smaller */
             gap: 20px;
+            align-items: center !important;
+            flex-direction: row; /* ensure it's row for horizontal centering */
         }
 
         .scroll-box {
@@ -90,6 +92,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            align-items: center !important;
+            flex-direction: row; /* ensure it's row for horizontal centering */
         }
 
         #recent-activity, #notes-box {
