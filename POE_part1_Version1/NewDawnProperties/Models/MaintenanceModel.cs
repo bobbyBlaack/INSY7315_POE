@@ -20,7 +20,7 @@ namespace NewDawnProperties.Models
 
         public string Type {  get; set; }
 
-        public DateOnly MaintenanceDate { get; set; }
+        public DateTime MaintenanceDate { get; set; }
 
         public int RoomID { get; set; }
 
