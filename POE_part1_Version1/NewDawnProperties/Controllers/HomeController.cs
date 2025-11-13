@@ -93,8 +93,8 @@ namespace NewDawnProperties.Controllers
                 // storing session data
                 HttpContext.Session.SetString("UserEmail", user.Email);
                 HttpContext.Session.SetString("UserRole", user.Role);
+                HttpContext.Session.SetInt32("UserID", user.UserID);
 
-                
                 var role = user.Role?.Trim().ToLower();
 
                 if (role == "admin")
