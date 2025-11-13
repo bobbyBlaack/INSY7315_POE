@@ -16,9 +16,9 @@ namespace NewDawnProperties.Models
 
         public int LeaseStatus { get; set; }
 
-        public DateOnly LeaseStart{ get; set; }
+        public DateTime LeaseStart{ get; set; }
 
-        public DateOnly LeaseEnd { get; set; }
+        public DateTime LeaseEnd { get; set; }
 
         public int RentAmount { get; set; }
 

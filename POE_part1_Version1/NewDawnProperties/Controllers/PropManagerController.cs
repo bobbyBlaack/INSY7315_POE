@@ -27,12 +27,35 @@ namespace NewDawnProperties.Controllers
         
         }
 
-        public IActionResult ManagerLease() { 
-        
-        
-            return View();
-        
+        public IActionResult ManagerLease()
+        {
+            int? userId = HttpContext.Session.GetInt32("UserID");
+
+            if (userId == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }
+
+            // Get all properties managed by this user
+            var managedProps = _context.Property
+                .Where(p => p.UserID == userId)
+                .Select(p => p.PropID)
+                .ToList();
+
+            // Get all rooms that belong to those properties
+            var rooms = _context.Rooms
+                .Where(r => managedProps.Contains(r.PropID ?? 0))
+                .Select(r => r.RoomID)
+                .ToList();
+
+            // Get leases that belong to those rooms
+            var leases = _context.Leases
+                .Where(l => rooms.Contains(l.RoomId))
+                .ToList();
+
+            return View(leases);
         }
+
 
         public IActionResult ManagerListing() { 
         
