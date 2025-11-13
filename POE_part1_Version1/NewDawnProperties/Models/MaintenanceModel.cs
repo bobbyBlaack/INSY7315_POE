@@ -28,5 +28,7 @@ namespace NewDawnProperties.Models
 
         public int Status { get; set; }
 
+        public bool IsSynced { get; set; } = false;
+
     }
 }

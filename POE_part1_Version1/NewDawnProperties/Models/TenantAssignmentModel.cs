@@ -9,13 +9,15 @@ namespace NewDawnProperties.Models
     public class TenantAssignmentModel
     {
         [Key]
-        public int TenantAssignment {  get; set; }
+        public int TenantAssignment { get; set; }
 
         public int? UserID { get; set; }
 
         public int? PropID { get; set; }
 
         public int? RoomID { get; set; }
+
+        public bool IsSynced { get; set; } = false;
 
     }
 }

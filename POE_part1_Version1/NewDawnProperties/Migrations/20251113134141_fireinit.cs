@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NewDawnProperties.Migrations
 {
     /// <inheritdoc />
-    public partial class iteration1 : Migration
+    public partial class fireinit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,8 @@ namespace NewDawnProperties.Migrations
                     CaretakerAssignmentID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     UserID = table.Column<int>(type: "INTEGER", nullable: true),
-                    PropID = table.Column<int>(type: "INTEGER", nullable: true)
+                    PropID = table.Column<int>(type: "INTEGER", nullable: true),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -36,7 +37,8 @@ namespace NewDawnProperties.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
                     Category = table.Column<int>(type: "INTEGER", nullable: false),
                     Summary = table.Column<string>(type: "TEXT", nullable: false),
-                    Actions = table.Column<string>(type: "TEXT", nullable: false)
+                    Actions = table.Column<string>(type: "TEXT", nullable: false),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -56,7 +58,8 @@ namespace NewDawnProperties.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
                     Role = table.Column<int>(type: "INTEGER", nullable: false),
                     LeaseAction = table.Column<string>(type: "TEXT", nullable: false),
-                    RoomId = table.Column<int>(type: "INTEGER", nullable: false)
+                    RoomId = table.Column<int>(type: "INTEGER", nullable: false),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -76,7 +79,8 @@ namespace NewDawnProperties.Migrations
                     MaintenanceDate = table.Column<DateOnly>(type: "TEXT", nullable: false),
                     RoomID = table.Column<int>(type: "INTEGER", nullable: false),
                     PropID = table.Column<int>(type: "INTEGER", nullable: false),
-                    Status = table.Column<int>(type: "INTEGER", nullable: false)
+                    Status = table.Column<int>(type: "INTEGER", nullable: false),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -96,7 +100,8 @@ namespace NewDawnProperties.Migrations
                     UserID = table.Column<int>(type: "INTEGER", nullable: false),
                     RoomsCount = table.Column<int>(type: "INTEGER", nullable: false),
                     ListImage = table.Column<byte[]>(type: "BLOB", nullable: false),
-                    ListVideo = table.Column<byte[]>(type: "BLOB", nullable: false)
+                    ListVideo = table.Column<byte[]>(type: "BLOB", nullable: false),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -110,7 +115,8 @@ namespace NewDawnProperties.Migrations
                     RoomID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Block = table.Column<string>(type: "TEXT", nullable: false),
-                    PropID = table.Column<int>(type: "INTEGER", nullable: true)
+                    PropID = table.Column<int>(type: "INTEGER", nullable: true),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -125,7 +131,8 @@ namespace NewDawnProperties.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     UserID = table.Column<int>(type: "INTEGER", nullable: true),
                     PropID = table.Column<int>(type: "INTEGER", nullable: true),
-                    RoomID = table.Column<int>(type: "INTEGER", nullable: true)
+                    RoomID = table.Column<int>(type: "INTEGER", nullable: true),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -144,7 +151,8 @@ namespace NewDawnProperties.Migrations
                     PhoneNumber = table.Column<string>(type: "TEXT", nullable: false),
                     Role = table.Column<string>(type: "TEXT", nullable: false),
                     FName = table.Column<string>(type: "TEXT", nullable: false),
-                    SName = table.Column<string>(type: "TEXT", nullable: false)
+                    SName = table.Column<string>(type: "TEXT", nullable: false),
+                    IsSynced = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

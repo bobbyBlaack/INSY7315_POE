@@ -8,13 +8,19 @@ var builder = WebApplication.CreateBuilder(args);
 // ===== Add services to the container =====
 builder.Services.AddControllersWithViews();
 
-// Ollama HTTP client service registration
+// ===== Ollama HTTP client service =====
 builder.Services.AddHttpClient<OllamaService>();
-builder.Services.AddHttpClient();
 
-// Database registration
+// ===== Database registration =====
+// Separate DbContexts for SQLite (offline) and Postgres (online)
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("SQLiteConnection")));
+
+
+//firestoreservice
+builder.Services.AddScoped<FirestoreSyncService>();
+builder.Services.AddHostedService<FirestoreBackgroundSync>();
+
 
 // ===== Session configuration =====
 builder.Services.AddDistributedMemoryCache();
@@ -25,7 +31,10 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// ===== OpenAI service registration =====
+
+
+
+// ===== OpenAI client =====
 builder.Services.AddSingleton<OpenAIClient>(sp =>
 {
     var config = sp.GetRequiredService<IConfiguration>();
@@ -35,7 +44,7 @@ builder.Services.AddSingleton<OpenAIClient>(sp =>
 
 var app = builder.Build();
 
-// ===== Configure middleware pipeline =====
+// ===== Middleware pipeline =====
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -47,9 +56,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
 app.UseSession();
-
 app.UseAuthorization();
 
 // ===== Routing =====

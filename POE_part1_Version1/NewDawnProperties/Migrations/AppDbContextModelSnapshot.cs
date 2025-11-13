@@ -23,6 +23,9 @@ namespace NewDawnProperties.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("PropID")
                         .HasColumnType("INTEGER");
 
@@ -50,6 +53,9 @@ namespace NewDawnProperties.Migrations
                     b.Property<DateOnly>("EscalationDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("RoomId")
                         .HasColumnType("INTEGER");
 
@@ -69,6 +75,9 @@ namespace NewDawnProperties.Migrations
                 {
                     b.Property<int>("LeaseID")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsSynced")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("LeaseAction")
@@ -111,6 +120,9 @@ namespace NewDawnProperties.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateOnly>("MaintenanceDate")
                         .HasColumnType("TEXT");
 
@@ -152,6 +164,9 @@ namespace NewDawnProperties.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
+
                     b.Property<byte[]>("ListImage")
                         .IsRequired()
                         .HasColumnType("BLOB");
@@ -189,6 +204,9 @@ namespace NewDawnProperties.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("PropID")
                         .HasColumnType("INTEGER");
 
@@ -201,6 +219,9 @@ namespace NewDawnProperties.Migrations
                 {
                     b.Property<int>("TenantAssignment")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsSynced")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("PropID")
@@ -230,6 +251,9 @@ namespace NewDawnProperties.Migrations
                     b.Property<string>("FName")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsSynced")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Password")
                         .IsRequired()

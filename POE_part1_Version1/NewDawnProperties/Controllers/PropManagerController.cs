@@ -13,6 +13,33 @@ namespace NewDawnProperties.Controllers
             _context = context;
         }
 
+
+
+        public IActionResult ManagerNotif() { 
+        
+            return View();
+        
+        }
+
+        public IActionResult ManagerEscalation() { 
+        
+            return View();
+        
+        }
+
+        public IActionResult ManagerLease() { 
+        
+        
+            return View();
+        
+        }
+
+        public IActionResult ManagerListing() { 
+        
+        
+            return View();
+        }
+
         public IActionResult PropManDashboard()
         {
             // Retrieve UserID from session
