@@ -1,0 +1,70 @@
+﻿# ==============================
+# Visual Studio / IDE
+# ==============================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+*.DotSettings
+
+# ==============================
+# Build results
+# ==============================
+bin/
+obj/
+Debug/
+Release/
+[Bb]uild/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+*.tlog
+
+# ==============================
+# Temporary / Cache
+# ==============================
+*.tmp
+*.tmp_proj
+*.cache
+*.pdb
+
+# ==============================
+# Windows
+# ==============================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==============================
+# Test / profiling
+# ==============================
+*.psess
+*.vsp
+*.vspx
+*.vssscc
+
+# ==============================
+# Firebase Admin Secret
+# ==============================
+Secret/insy7315-firebase-adminsdk-fbsvc-b629c1b16d.json
+Secret/insy7315-firebase-adminsdk-fbsvc-2e348992c3.json
+Secret/
+
+# ==============================
+# Optional: Node / npm (if any front-end)
+# ==============================
+node_modules/
+package-lock.json
+yarn.lock
+
+# ==============================
+# Other sensitive or local files
+# ==============================
+.env

@@ -1,22 +1,103 @@
-html {
-  font-size: 14px;
+/* Landing page background */
+.landing-body {
+    background-image: url('../images/paul-hanaoka-5za2ss955yg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+/* Heading style */
+#welcome-text {
+    margin-top: 60px;
+    padding: 20px 50px;
+    font-size: 62px;
+    text-align: center;
+    color: black;
+    position:center;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: 4px solid #FF9D00;
+    display: inline-block;
+    position: relative;
+    opacity: 0; /* initial for fade-in */
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* ===== Typing Bubble ===== */
+.ai-typing {
+    align-self: flex-start;
+    display: flex;
+    gap: 3px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    background-color: #E6B566;
+    width: 50px;
+    justify-content: center;
+    animation: pulse 1s infinite;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+    .ai-typing span {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: black;
+        border-radius: 50%;
+        animation: bounce 1s infinite;
+    }
+
+        .ai-typing span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .ai-typing span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .ai-typing span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
 }
 
-body {
-  margin-bottom: 60px;
+
+/* Button container */
+.Listing-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 80px;
 }
+
+/* Individual buttons */
+.custom-btn {
+    width: 420px;
+    height: 300px;
+    border-radius: 15px;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #FF9D00;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .custom-btn:hover {
+        background-color: #FFD580;
+        transform: scale(1.05);
+    }
+

@@ -1,8 +1,57 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<body class="landing-body">
+    <h1 id="welcome-text">Welcome to New Dawn Properties</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="Listing-Button">
+        <form asp-controller="Home" asp-action="Listings" method="post">
+            <button class="custom-btn">Check Out Our Units</button>
+        </form>
+
+        <form asp-controller="ChatBot" asp-action="myAiAssistant" method="post">
+            <button class="custom-btn">Check out our Chatbot</button>
+        </form>
+
+        <form asp-controller="Home" asp-action="SignIn" method="post">
+            <button class="custom-btn">Prop Manager</button>
+        </form>
+
+        <form asp-controller="Home" asp-action="SignIn" method="post">
+            <button class="custom-btn">Sign In</button>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Animation Script -->
+    <script>
+        $(document).ready(function () {
+            const welcome = $("#welcome-text");
+
+            // Initial state: hidden and small
+            welcome.css({
+                opacity: 0,
+                transform: "scale(0.5) translateY(-50px)"
+            });
+
+            // Animate in
+            welcome.animate(
+                { opacity: 1 },
+                {
+                    duration: 1200,
+                    step: function (now, fx) {
+                        if (fx.prop === "opacity") {
+                            $(this).css("transform", `scale(${0.5 + now * 0.5}) translateY(${(-50 + now * 50)}px)`);
+                        }
+                    },
+                    complete: function () {
+                        // Add a gentle bounce
+                        $(this)
+                            .animate({ top: "+=15px" }, 300)
+                            .animate({ top: "-=10px" }, 300)
+                            .animate({ top: "+=5px" }, 300);
+                    }
+                }
+            );
+        });
+    </script>
+</body>
