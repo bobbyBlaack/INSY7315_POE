@@ -27,7 +27,6 @@ Release/
 *.log
 *.tlog
 
-
 # ==============================
 # Temporary / Cache
 # ==============================
@@ -55,6 +54,8 @@ Desktop.ini
 # Firebase Admin Secret
 # ==============================
 Secret/insy7315-firebase-adminsdk-fbsvc-b629c1b16d.json
+Secret/insy7315-firebase-adminsdk-fbsvc-2e348992c3.json
+Secret/
 
 # ==============================
 # Optional: Node / npm (if any front-end)
