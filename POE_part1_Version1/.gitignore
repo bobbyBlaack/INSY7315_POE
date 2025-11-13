@@ -26,6 +26,10 @@ Release/
 # ==============================
 *.log
 *.tlog
+# Ignore SQLite databases
+*.db
+*.db-shm
+*.db-wal
 
 # ==============================
 # Temporary / Cache

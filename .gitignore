@@ -64,6 +64,11 @@ NewDawnProperties/NewDawnProperty.db-shm
 NewDawnProperties/NewDawnProperty.db-wal
 *.log
 *.sqlite
+# Ignore SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
 # OS generated files #
 ######################
 .DS_Store?
