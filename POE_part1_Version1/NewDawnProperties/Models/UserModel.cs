@@ -34,5 +34,7 @@ namespace NewDawnProperties.Models
         [Required]
         public string SName { get; set; }
 
+        public bool IsSynced { get; set; } = false;
+
     }
 }

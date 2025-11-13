@@ -76,6 +76,7 @@ namespace NewDawnProperties.Controllers
         
         }
 
+        public IActionResult Profile() { return View(); }
         
         public IActionResult SignIn()
         {

@@ -33,6 +33,8 @@ namespace NewDawnProperties.Models
         //foreign key for the room/ building ID
         public int RoomId { get; set; }
 
-        
+        public bool IsSynced { get; set; } = false;
+
+
     }
 }

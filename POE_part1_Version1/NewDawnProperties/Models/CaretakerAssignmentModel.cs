@@ -16,5 +16,7 @@ namespace NewDawnProperties.Models
 
         public int? PropID { get; set; }
 
+        public bool IsSynced { get; set; } = false;
+
     }
 }

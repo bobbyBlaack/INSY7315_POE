@@ -31,5 +31,7 @@ namespace NewDawnProperties.Models
         public byte[] ListImage { get; set; }
 
         public byte[] ListVideo { get; set; }
+
+        public bool IsSynced { get; set; } = false;
     }
 }
