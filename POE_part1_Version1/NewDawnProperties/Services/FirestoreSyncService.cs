@@ -50,7 +50,7 @@ namespace NewDawnProperties.Services
                     property.UserID,
                     property.RoomsCount,
                     ListImage = property.ListImage != null ? Convert.ToBase64String(property.ListImage) : null,
-                    ListVideo = property.ListVideo != null ? Convert.ToBase64String(property.ListVideo) : null,
+                    
                     property.IsSynced
                 });
 

@@ -1,4 +1,10 @@
-﻿<head>
+﻿@model List<NewDawnProperties.Models.PropertyModel>
+
+@{
+    ViewData["Title"] = "Manage Leases";
+}
+
+<head>
     <style>
         /* ===== Navbar ===== */
         #navbar {
@@ -31,103 +37,130 @@
                 font-weight: bold;
             }
 
-        /* ===== Page Layout ===== */
+        /* ===== Page Container ===== */
         #dashboard-container {
-            margin-top: 80px; /* space for fixed navbar */
-            padding: 20px;
+            margin-top: 80px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
-        }
-
-        /* ===== Top Summary Section ===== */
-        #summary-section {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
             gap: 20px;
         }
 
-        #property-title {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .summary-box {
+        .lease-form, .lease-table-container {
             background-color: #f0f0f0;
-            border-radius: 10px;
-            padding: 15px;
-            min-width: 120px;
-            text-align: center;
-            flex: 1;
+            padding: 20px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        /* ===== Middle Section Grid ===== */
-        #middle-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
+        h2 {
+            margin-bottom: 15px;
         }
 
-        .scroll-box {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 15px;
-            max-height: 400px;
-            overflow-y: auto;
-        }
-
-        /* ===== Bottom Section Grid ===== */
-        #bottom-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        #recent-activity, #notes-box {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 15px;
-            min-height: 250px;
-            overflow-y: auto;
-        }
-
-        #notes-textarea {
+        /* ===== Table Styles ===== */
+        table {
             width: 100%;
-            height: 150px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            padding: 5px;
+            border-collapse: collapse;
         }
 
-        /* ===== Floating AI Chatbot Icon ===== */
-        #ai-chatbot {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #FF9D00;
-            color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #E6B566;
+        }
+
+        .btn-edit {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+            .btn-edit:hover {
+                background-color: #45a049;
+            }
+
+        .btn-delete {
+            padding: 6px 12px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 6px;
             cursor: pointer;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            transition: 0.3s;
         }
 
-            #ai-chatbot:hover {
-                transform: scale(1.1);
+            .btn-delete:hover {
+                background-color: #da190b;
+            }
+
+        .btn-save {
+            padding: 6px 12px;
+            background-color: #008CBA;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+            .btn-save:hover {
+                background-color: #007bb5;
+            }
+
+        .btn-cancel {
+            padding: 6px 12px;
+            background-color: #e7e7e7;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+            .btn-cancel:hover {
+                background-color: #d6d6d6;
+            }
+
+        input.edit {
+            display: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form div {
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form select, form textarea {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        #add-lease-btn {
+            padding: 10px 20px;
+            background-color: #FF9D00;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+            #add-lease-btn:hover {
+                background-color: #E68A00;
             }
     </style>
 </head>
 
 <body>
-
-    <!-- ===== Navbar ===== -->
+    <!-- Navbar -->
     <div id="navbar">
         <a href="#" id="logo">Company Logo</a>
         <a asp-action="PropManDashboard">Dashboard</a>
@@ -137,5 +170,166 @@
         <a asp-action="ManagerNotif">Notifications</a>
         <a asp-controller="Home" asp-action="Profile">Profile</a>
     </div>
-<h1>Listing</h1>
+
+    <!-- Main Container -->
+    <div id="dashboard-container">
+
+        <!-- Leases Table -->
+        <div class="lease-table-container">
+            <h2>Existing Properties / Leases</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Rooms</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var prop in Model)
+                    {
+                        <tr id="row-@prop.PropID">
+                            <td>@prop.PropID</td>
+                            <td>
+                                <span class="text">@prop.PropName</span>
+                                <input class="edit" type="text" value="@prop.PropName" />
+                            </td>
+                            <td>
+                                <span class="text">@prop.ListPrice</span>
+                                <input class="edit" type="text" value="@prop.ListPrice" />
+                            </td>
+                            <td>
+                                <span class="text">@prop.Address</span>
+                                <input class="edit" type="text" value="@prop.Address" />
+                            </td>
+                            <td>
+                                <span class="text">@prop.City</span>
+                                <input class="edit" type="text" value="@prop.City" />
+                            </td>
+                            <td>
+                                <span class="text">@prop.RoomsCount</span>
+                                <input class="edit" type="number" value="@prop.RoomsCount" />
+                            </td>
+                            <td>
+                                <button class="btn-edit" onclick="enableEdit(@prop.PropID)">Edit</button>
+                                <button class="btn-save" onclick="saveEdit(@prop.PropID)" style="display:none;">Save</button>
+                                <button class="btn-cancel" onclick="cancelEdit(@prop.PropID)" style="display:none;">Cancel</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Lease Form -->
+        <div class="lease-form">
+            <h2>Add New Listing</h2>
+            <form asp-action="AddNewListing" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <label>User ID (Owner)</label>
+                    <input type="text" value="******" disabled />
+                    <input type="hidden" name="UserID" value="@Context.Session.GetInt32("UserID")" />
+                </div>
+
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="PropName" required />
+                </div>
+
+                <div>
+                    <label>Price</label>
+                    <input type="text" name="ListPrice" required />
+                </div>
+
+                <div>
+                    <label>Address</label>
+                    <input type="text" name="Address" required />
+                </div>
+
+                <div>
+                    <label>City</label>
+                    <input type="text" name="City" required />
+                </div>
+
+                <div>
+                    <label>Rooms Count</label>
+                    <input type="number" name="RoomsCount" required min="1" />
+                </div>
+
+                <div>
+                    <label>Upload Image</label>
+                    <input type="file" name="ImageFile" accept="image/*" />
+                </div>
+
+                <div>
+                    <label>Upload Video</label>
+                    <input type="file" name="VideoFile" accept="video/*" />
+                </div>
+
+                <div>
+                    <button type="submit" id="add-lease-btn">Add Property</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function enableEdit(id) {
+            let row = $("#row-" + id);
+            row.find(".text").hide();
+            row.find(".edit").show();
+
+            row.find(".btn-edit").hide();
+            row.find(".btn-save, .btn-cancel").show();
+        }
+
+        function cancelEdit(id) {
+            let row = $("#row-" + id);
+            row.find(".edit").each(function (i) {
+                $(this).val(row.find(".text").eq(i).text());
+            });
+
+            row.find(".text").show();
+            row.find(".edit").hide();
+
+            row.find(".btn-edit").show();
+            row.find(".btn-save, .btn-cancel").hide();
+        }
+
+        function saveEdit(id) {
+            let row = $("#row-" + id);
+            let data = {
+                PropID: id,
+                PropName: row.find("input").eq(0).val(),
+                ListPrice: row.find("input").eq(1).val(),
+                Address: row.find("input").eq(2).val(),
+                City: row.find("input").eq(3).val(),
+                RoomsCount: row.find("input").eq(4).val()
+            };
+
+            $.ajax({
+                url: "/Property/UpdateProperty",
+                type: "POST",
+                data: data,
+                success: function () {
+                    row.find(".text").each(function (i) {
+                        $(this).text(row.find(".edit").eq(i).val());
+                    });
+                    cancelEdit(id);
+                    alert("Property updated successfully!");
+                },
+                error: function () {
+                    alert("Error updating property.");
+                }
+            });
+        }
+    </script>
+
 </body>

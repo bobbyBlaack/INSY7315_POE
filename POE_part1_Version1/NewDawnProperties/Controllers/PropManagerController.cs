@@ -39,30 +39,40 @@ namespace NewDawnProperties.Controllers
 
         public async Task<IActionResult> ManagerEscalation(DateTime? startDate, DateTime? endDate)
         {
-            // Logged-in user
-            var userId = HttpContext.Session.GetInt32("UserId") ?? 0;
+            // Logged-in Property Owner ID
+            var ownerId = HttpContext.Session.GetInt32("UserID") ?? 0;
+            if (ownerId == 0)
+                return RedirectToAction("Login", "Home");
 
-            // Get the Room IDs assigned to this user (TenantAssignment)
-            var userRoomIds = await _context.TenantAssignment
-                .Where(t => t.UserID == userId)
+            // Step 1: Find all properties owned by this user
+            var ownerPropertyIds = await _context.Property
+                .Where(p => p.UserID == ownerId)
+                .Select(p => p.PropID)
+                .ToListAsync();
+
+            // Step 2: Find all rooms under those properties (TenantAssignment)
+            var ownerRoomIds = await _context.TenantAssignment
+                .Where(t => t.PropID.HasValue && ownerPropertyIds.Contains(t.PropID.Value))
                 .Select(t => t.RoomID)
                 .ToListAsync();
 
-            // Get escalations for those rooms only
+            // Step 3: Filter escalations by those room IDs
             var escalationsQuery = _context.Escalations
-                .Where(e => userRoomIds.Contains(e.RoomId));
+                .Where(e => ownerRoomIds.Contains(e.RoomId));
 
-            // Optional date filter
+            // Step 4: Apply optional date filtering
             if (startDate.HasValue)
                 escalationsQuery = escalationsQuery.Where(e => e.EscalationDate >= startDate.Value);
+
             if (endDate.HasValue)
                 escalationsQuery = escalationsQuery.Where(e => e.EscalationDate <= endDate.Value);
 
+            // Execute query
             var escalationList = await escalationsQuery
                 .OrderByDescending(e => e.EscalationDate)
                 .ToListAsync();
 
-            // Summary boxes
+            // Step 5: Summary counts
             ViewBag.Total = escalationList.Count;
             ViewBag.High = escalationList.Count(e => e.Actions == "High");
             ViewBag.Medium = escalationList.Count(e => e.Actions == "Medium");
@@ -70,6 +80,7 @@ namespace NewDawnProperties.Controllers
 
             return View(escalationList);
         }
+
 
 
 
@@ -103,10 +114,126 @@ namespace NewDawnProperties.Controllers
         }
 
 
-        public IActionResult ManagerListing() { 
-        
-        
-            return View();
+        [HttpPost]
+        public async Task<IActionResult> UpdateProperty(PropertyModel updatedProp)
+        {
+            var prop = await _context.Property.FindAsync(updatedProp.PropID);
+            if (prop == null)
+                return NotFound();
+
+            prop.PropName = updatedProp.PropName;
+            prop.ListPrice = updatedProp.ListPrice;
+            prop.Address = updatedProp.Address;
+            prop.City = updatedProp.City;
+            prop.RoomsCount = updatedProp.RoomsCount;
+
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddNewListing(PropertyModel model, IFormFile ImageFile, IFormFile VideoFile)
+        {
+            var userId = HttpContext.Session.GetInt32("UserID") ?? 0;
+
+            model.UserID = userId;
+
+            if (ImageFile != null)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    await ImageFile.CopyToAsync(ms);
+                    model.ListImage = ms.ToArray();
+                }
+            }
+
+            if (VideoFile != null)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    await VideoFile.CopyToAsync(ms);
+                    model.ListVideo = ms.ToArray();
+                }
+            }
+
+            _context.Property.Add(model);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("ManagerLease");
+        }
+
+
+        // Display all properties for the logged-in user
+        public IActionResult ManagerListing()
+        {
+            var userId = HttpContext.Session.GetInt32("UserID") ?? 0;
+
+            var properties = _context.Property
+                .Where(p => p.UserID == userId)
+                .ToList();
+
+            return View(properties);
+        }
+
+        // GET: Add/Edit property
+        public IActionResult EditProperty(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var property = _context.Property.Find(id);
+            if (property == null) return NotFound();
+
+            return View(property);
+        }
+
+        // POST: Update property
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditProperty(PropertyModel property)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Update(property);
+                _context.SaveChanges();
+                return RedirectToAction("ManagerListing");
+            }
+            return View(property);
+        }
+
+        // POST: Delete property
+        [HttpPost]
+        public IActionResult DeleteProperty(int id)
+        {
+            var property = _context.Property.Find(id);
+            if (property != null)
+            {
+                _context.Property.Remove(property);
+                _context.SaveChanges();
+            }
+            return RedirectToAction("ManagerListing");
+        }
+
+        // POST: Add new property
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddProperty(PropertyModel property)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId") ?? 0;
+            property.UserID = userId;
+
+            if (ModelState.IsValid)
+            {
+                _context.Property.Add(property);
+                _context.SaveChanges();
+                return RedirectToAction("ManagerListing");
+            }
+
+            // If validation fails, reload the page with existing data
+            var properties = _context.Property
+                .Where(p => p.UserID == userId)
+                .ToList();
+            return View("ManagerListing", properties);
         }
 
         public IActionResult PropManDashboard()
@@ -127,5 +254,11 @@ namespace NewDawnProperties.Controllers
 
             return View(properties);
         }
+
+       
+
+        
+
+ 
     }
 }

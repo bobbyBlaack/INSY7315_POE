@@ -1,1 +1,213 @@
-﻿<h1>Profile Page</h1>
+﻿@model NewDawnProperties.Models.UserModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        /* ===== Navbar (same as dashboard) ===== */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E6B566;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+            #navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 10px 15px;
+                transition: color 0.3s;
+            }
+
+                #navbar a:hover {
+                    color: white;
+                }
+
+            #navbar #logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        /* ===== Main Container ===== */
+        #dashboard-container {
+            margin-top: 90px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-card {
+            background-color: lightgray;
+            border-radius: 12px;
+            padding: 25px;
+            width: 450px;
+            box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+        }
+
+        .profile-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .form-row label {
+                font-weight: bold;
+            }
+
+            .form-row input {
+                padding: 8px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                background-color: white;
+            }
+
+        /* Buttons */
+        .profile-btn {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+        #editBtn {
+            background-color: #E6B566;
+        }
+
+        #saveBtn {
+            background-color: #8BC34A;
+            display: none;
+        }
+
+        #cancelBtn {
+            background-color: #ff6666;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <div id="navbar">
+        <a href="#" id="logo">Company Logo</a>
+        <a asp-controller="PropManager" asp-action="PropManDashboard">Dashboard</a>
+        <a asp-controller="PropManager" asp-action="ManagerListing">Update Listings</a>
+        <a asp-controller="PropManager" asp-action="ManagerLease">Manage Leases</a>
+        <a asp-controller="PropManager" asp-action="ManagerEscalation">Escalations</a>
+        <a asp-controller="PropManager" asp-action="ManagerNotif">Notifications</a>
+        <a asp-controller="PropManager" asp-controller="Home" asp-action="Profile">Profile</a>
+    </div>
+
+    <!-- ===== Main Content ===== -->
+    <div id="dashboard-container">
+        <div class="profile-card">
+
+            <div class="profile-title">Profile Information</div>
+
+            <div class="form-row">
+                <label>First Name</label>
+                <input id="FName" value="@Model.FName" disabled />
+            </div>
+
+            <div class="form-row">
+                <label>Last Name</label>
+                <input id="SName" value="@Model.SName" disabled />
+            </div>
+
+            <div class="form-row">
+                <label>Email</label>
+                <input id="Email" value="@Model.Email" disabled />
+            </div>
+
+            <div class="form-row">
+                <label>Phone Number</label>
+                <input id="PhoneNumber" value="@Model.PhoneNumber" disabled />
+            </div>
+
+            <div class="form-row">
+                <label>Username</label>
+                <input id="UserName" value="@Model.UserName" disabled />
+            </div>
+
+            <div class="form-row">
+                <label>Password</label>
+                <input id="Password" value="@Model.Password" disabled />
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button id="editBtn" class="profile-btn">Edit</button>
+                <button id="saveBtn" class="profile-btn">Save</button>
+                <button id="cancelBtn" class="profile-btn">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ===== jQuery Logic ===== -->
+    <script>
+        $(document).ready(function () {
+
+            $("#editBtn").click(function () {
+                $("input").prop("disabled", false);
+                $("#editBtn").hide();
+                $("#saveBtn").show();
+                $("#cancelBtn").show();
+            });
+
+            $("#cancelBtn").click(function () {
+                location.reload(); // Reload to restore original values
+            });
+
+            $("#saveBtn").click(function () {
+
+                let userData = {
+                    UserID: @Model.UserID,
+                    FName: $("#FName").val(),
+                    SName: $("#SName").val(),
+                    Email: $("#Email").val(),
+                    PhoneNumber: $("#PhoneNumber").val(),
+                    UserName: $("#UserName").val(),
+                    Password: $("#Password").val()
+                };
+
+                $.ajax({
+                    url: '/Home/UpdateProfile',
+                    type: 'POST',
+                    data: userData,
+                    success: function () {
+                        alert("Profile updated!");
+                        location.reload();
+                    },
+                    error: function () {
+                        alert("Error updating profile.");
+                    }
+                });
+
+            });
+
+        });
+    </script>
+
+</body>

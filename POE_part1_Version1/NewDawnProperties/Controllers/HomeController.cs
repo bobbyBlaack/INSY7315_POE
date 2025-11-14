@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NewDawnProperties.Data;
 using NewDawnProperties.Models;
 using System.Diagnostics;
@@ -76,8 +77,39 @@ namespace NewDawnProperties.Controllers
         
         }
 
-        public IActionResult Profile() { return View(); }
-        
+        public async Task<IActionResult> Profile()
+        {
+            var userId = HttpContext.Session.GetInt32("UserID") ?? 0;
+            if (userId == 0)
+                return RedirectToAction("Login", "Home");
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userId);
+
+            return View(user);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateProfile(UserModel updatedUser)
+        {
+            var user = await _context.Users.FindAsync(updatedUser.UserID);
+            if (user == null)
+                return NotFound();
+
+            user.FName = updatedUser.FName;
+            user.SName = updatedUser.SName;
+            user.Email = updatedUser.Email;
+            user.PhoneNumber = updatedUser.PhoneNumber;
+            user.Password = updatedUser.Password;
+            user.UserName = updatedUser.UserName;
+
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
+
         public IActionResult SignIn()
         {
 

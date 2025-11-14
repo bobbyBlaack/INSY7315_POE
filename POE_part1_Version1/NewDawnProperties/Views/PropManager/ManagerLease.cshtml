@@ -41,7 +41,6 @@
             padding: 20px;
         }
 
-        /* Top controls (Search + Filters + Button) */
         #control-bar {
             display: flex;
             justify-content: space-between;
@@ -76,7 +75,6 @@
                 background-color: #E68A00;
             }
 
-        /* Summary boxes */
         #summary-section {
             display: flex;
             gap: 20px;
@@ -91,13 +89,17 @@
             text-align: center;
         }
 
-        /* Scrollable table */
+        #table-container {
+            max-height: 500px;
+            overflow-y: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
         #lease-table {
             width: 100%;
             border-collapse: collapse;
             background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
         }
 
             #lease-table th, #lease-table td {
@@ -110,11 +112,50 @@
                 background-color: #E6B566;
             }
 
-        #table-container {
-            max-height: 400px;
-            overflow-y: auto;
-            border-radius: 8px;
-            border: 1px solid #ccc;
+        .view-btn {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .expanded-row {
+            display: none;
+            background-color: #f9f9f9;
+        }
+
+        .expanded-content {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-btn {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .active-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .expiring-btn {
+            background-color: #FFD700;
+            color: black;
+        }
+
+        .expired-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .terminated-btn {
+            background-color: #888;
+            color: white;
         }
     </style>
 </head>
@@ -131,7 +172,6 @@
     </div>
 
     <div id="dashboard-container">
-        <!-- Control Bar -->
         <div id="control-bar">
             <input type="text" id="search-input" placeholder="Search by Tenant or Unit...">
             <select id="status-filter">
@@ -144,7 +184,6 @@
             <button id="add-lease-btn" onclick="window.location.href='/PropertyManager/AddLease'">+ Add Lease</button>
         </div>
 
-        <!-- Summary Section -->
         <div id="summary-section">
             <div class="summary-box">Active Leases: <strong>@Model.Count(l => l.LeaseStatus == 1)</strong></div>
             <div class="summary-box">Expiring Soon: <strong>@Model.Count(l => l.LeaseStatus == 3)</strong></div>
@@ -152,7 +191,6 @@
             <div class="summary-box">Terminated: <strong>@Model.Count(l => l.LeaseStatus == 4)</strong></div>
         </div>
 
-        <!-- Scrollable Table -->
         <div id="table-container">
             <table id="lease-table">
                 <thead>
@@ -169,14 +207,27 @@
                 <tbody>
                     @foreach (var lease in Model)
                     {
-                        <tr>
+                        <tr data-id="@lease.LeaseID">
                             <td>@lease.LeaseID</td>
                             <td>@lease.LeaseAction</td>
-                            <td>@lease.LeaseStart</td>
-                            <td>@lease.LeaseEnd</td>
+                            <td>@lease.LeaseStart.ToString("yyyy-MM-dd")</td>
+                            <td>@lease.LeaseEnd.ToString("yyyy-MM-dd")</td>
                             <td>R @lease.RentAmount</td>
                             <td>@lease.RoomId</td>
-                            <td><button style="padding:5px 10px;">View</button></td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                        <tr class="expanded-row" id="expanded-@lease.LeaseID">
+                            <td colspan="7">
+                                <div class="expanded-content">
+
+                                    <div>
+                                        <button class="status-btn active-btn" data-status="1" data-id="@lease.LeaseID">Active</button>
+                                        <button class="status-btn expiring-btn" data-status="3" data-id="@lease.LeaseID">Expiring Soon</button>
+                                        <button class="status-btn expired-btn" data-status="2" data-id="@lease.LeaseID">Expired</button>
+                                        <button class="status-btn terminated-btn" data-status="4" data-id="@lease.LeaseID">Terminated</button>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -186,19 +237,43 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Search and filter logic
+        // Search and filter
         $('#search-input, #status-filter').on('input change', function () {
             let search = $('#search-input').val().toLowerCase();
             let status = $('#status-filter').val();
-
             $('#lease-table tbody tr').each(function () {
+                if ($(this).hasClass('expanded-row')) return;
                 let rowText = $(this).text().toLowerCase();
                 let statusText = $(this).find('td:nth-child(2)').text();
+                $(this).toggle(rowText.includes(search) && (status === "" || statusText === status));
+            });
+        });
 
-                let matchesSearch = rowText.includes(search);
-                let matchesStatus = status === "" || statusText === status;
+        // Expand/Collapse row
+        $('.view-btn').click(function () {
+            let row = $(this).closest('tr');
+            let id = row.data('id');
+            $('#expanded-' + id).toggle();
+        });
 
-                $(this).toggle(matchesSearch && matchesStatus);
+        // Change lease status via AJAX
+        $('.status-btn').click(function () {
+            let leaseId = $(this).data('id');
+            let newStatus = $(this).data('status');
+            let btn = $(this);
+
+            $.ajax({
+                url: '/PropertyManager/UpdateLeaseStatus',
+                type: 'POST',
+                data: { leaseId: leaseId, status: newStatus },
+                success: function () {
+                    // Update the main table status cell
+                    $('tr[data-id="' + leaseId + '"] td:nth-child(2)').text(btn.text());
+                    alert('Lease status updated!');
+                },
+                error: function () {
+                    alert('Error updating lease status.');
+                }
             });
         });
     </script>
