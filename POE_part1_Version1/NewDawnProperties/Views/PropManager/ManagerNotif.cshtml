@@ -122,6 +122,28 @@
             #ai-chatbot:hover {
                 transform: scale(1.1);
             }
+
+        #notifications-container {
+            margin-top: 90px; /* space for navbar */
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .notification-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #FF9D00;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
+
+            .notification-box:hover {
+                background-color: #fff3e0;
+            }
     </style>
 </head>
 
@@ -139,4 +161,21 @@
     </div>
 
 <h1>Manager Notif</h1>
+    <div id="notifications-container">
+        <h1>Notifications</h1>
+
+        @if (Model.Count == 0)
+        {
+            <p>No notifications yet.</p>
+        }
+        else
+        {
+            @foreach (var note in Model)
+            {
+                <div class="notification-box">
+                    @note
+                </div>
+            }
+        }
+    </div>
 </body>

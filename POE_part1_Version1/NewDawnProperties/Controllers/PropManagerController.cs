@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NewDawnProperties.Data;
 using NewDawnProperties.Models;
+using System.Globalization;
 using System.Linq;
 
 namespace NewDawnProperties.Controllers
@@ -18,11 +19,28 @@ namespace NewDawnProperties.Controllers
 
 
 
-        public IActionResult ManagerNotif() { 
-        
-            return View();
-        
+        public IActionResult ManagerNotif()
+        {
+            // Placeholder notifications
+            var notifications = new List<string>
+    {
+        "Lease #101 status changed to Active",
+        "New property #55 added",
+        "Lease #102 rent updated",
+        "Property #462 address updated",
+        "Lease #1701 status changed to Active",
+        "New property #55 added",
+        "Lease #182 rent updated",
+        "Property #42 address updated",
+        "Lease #301 status changed to Active",
+        "New property #95 added",
+        "Lease #192 rent updated",
+        "Property #02 address updated"
+    };
+
+            return View(notifications);
         }
+
 
         [HttpPost]
         public IActionResult UpdateAction(int id, string newAction)
@@ -129,6 +147,59 @@ namespace NewDawnProperties.Controllers
 
             await _context.SaveChangesAsync();
             return Ok();
+        }
+
+        // AJAX endpoint to update lease
+        [HttpPost]
+        public IActionResult UpdateLease([FromForm] int leaseId, [FromForm] decimal? rentAmount, [FromForm] string? leaseStart, [FromForm] string? leaseEnd)
+        {
+            var lease = _context.Leases.FirstOrDefault(l => l.LeaseID == leaseId);
+            if (lease == null)
+                return Json(new { success = false, message = "Lease not found." });
+
+            try
+            {
+                if (rentAmount.HasValue)
+                    lease.RentAmount = (int)Math.Round(rentAmount.Value); // safely convert to int
+
+                if (!string.IsNullOrEmpty(leaseStart))
+                    lease.LeaseStart = DateTime.ParseExact(leaseStart, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                if (!string.IsNullOrEmpty(leaseEnd))
+                    lease.LeaseEnd = DateTime.ParseExact(leaseEnd, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                _context.SaveChanges();
+
+                return Json(new { success = true, message = "Lease updated successfully." });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+
+        // AJAX endpoint to update only lease status
+        [HttpPost]
+        public IActionResult UpdateLeaseStatus([FromForm] int leaseId, [FromForm] int status)
+        {
+            var lease = _context.Leases.FirstOrDefault(l => l.LeaseID == leaseId);
+            if (lease == null)
+                return Json(new { success = false, message = "Lease not found." });
+
+            lease.LeaseStatus = status;
+            lease.LeaseAction = status switch
+            {
+                1 => "Active",
+                2 => "Expired",
+                3 => "Expiring Soon",
+                4 => "Terminated",
+                _ => lease.LeaseAction
+            };
+
+            _context.SaveChanges();
+
+            return Json(new { success = true, message = "Lease status updated." });
         }
 
 
