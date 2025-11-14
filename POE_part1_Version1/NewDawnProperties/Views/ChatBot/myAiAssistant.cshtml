@@ -107,8 +107,170 @@
             background-color: #FFD580;
             border-radius: 3px;
         }
+
+        /* ===== Navbar ===== */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E6B566;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+            #navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 10px 15px;
+                transition: color 0.3s;
+            }
+
+                #navbar a:hover {
+                    color: white;
+                }
+
+            #navbar #logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        /* ===== Page Layout ===== */
+        #dashboard-container {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* ===== Filter Section ===== */
+        #filter-section {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+            #filter-section input, #filter-section button {
+                padding: 8px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+            }
+
+            #filter-section button {
+                background-color: #E6B566;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+                #filter-section button:hover {
+                    background-color: #d39f58;
+                }
+
+        /* ===== Grid Layout ===== */
+        #listings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        /* ===== Listing Cards ===== */
+        .listing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+            .listing-card:hover {
+                transform: scale(1.02);
+            }
+
+        .listing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .listing-details {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .property-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .video-preview {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .expand-btn, .video-btn, .apply-btn {
+            padding: 6px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .expand-btn {
+            background-color: #E6B566;
+        }
+
+        .video-btn {
+            background-color: #FF9D00;
+        }
+
+        .apply-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .expand-btn:hover {
+            background-color: #d39f58;
+        }
+
+        .video-btn:hover {
+            background-color: #d87a00;
+        }
+
+        .apply-btn:hover {
+            background-color: #3e8e41;
+        }
+
     </style>
+
+
 </head>
+
+<!-- ===== Navbar ===== -->
+<div id="navbar">
+    <a href="#" id="logo">New Dawn</a>
+    <a asp-controller="PropManager" asp-action="PropManDashboard">Dashboard</a>
+    <a asp-controller="PropManager" asp-action="ManagerListing">Update Listings</a>
+    <a asp-controller="PropManager" asp-action="ManagerLease">Manage Leases</a>
+    <a asp-controller="PropManager" asp-action="ManagerEscalation">Escalations</a>
+    <a asp-controller="PropManager" asp-action="ManagerNotif">Notifications</a>
+    <a asp-controller="Home" asp-action="Profile">Profile</a>
+</div>
 
 
 <div class="chat-container">
