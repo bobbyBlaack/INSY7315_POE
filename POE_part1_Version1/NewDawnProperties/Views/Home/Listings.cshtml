@@ -1,1 +1,258 @@
-﻿<h1>Listings page</h1>
+﻿@model List<NewDawnProperties.Models.PropertyModel>
+
+@{
+    ViewData["Title"] = "All Listings";
+}
+
+<head>
+    <style>
+        /* ===== Navbar ===== */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E6B566;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+            #navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 10px 15px;
+                transition: color 0.3s;
+            }
+
+                #navbar a:hover {
+                    color: white;
+                }
+
+            #navbar #logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        /* ===== Page Layout ===== */
+        #dashboard-container {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* ===== Filter Section ===== */
+        #filter-section {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+            #filter-section input, #filter-section button {
+                padding: 8px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+            }
+
+            #filter-section button {
+                background-color: #E6B566;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+                #filter-section button:hover {
+                    background-color: #d39f58;
+                }
+
+        /* ===== Grid Layout ===== */
+        #listings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        /* ===== Listing Cards ===== */
+        .listing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+            .listing-card:hover {
+                transform: scale(1.02);
+            }
+
+        .listing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .listing-details {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .property-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .video-preview {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .expand-btn, .video-btn, .apply-btn {
+            padding: 6px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .expand-btn {
+            background-color: #E6B566;
+        }
+
+        .video-btn {
+            background-color: #FF9D00;
+        }
+
+        .apply-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .expand-btn:hover {
+            background-color: #d39f58;
+        }
+
+        .video-btn:hover {
+            background-color: #d87a00;
+        }
+
+        .apply-btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a asp-action="Index">Go Back</a>
+        <a asp-action="SignIn">Sign In</a>
+        <a asp-action="Profile">Profile</a>
+    </div>
+
+    <div id="dashboard-container">
+        <h1>All Listings</h1>
+
+        <!-- ===== Filter Section ===== -->
+        <div id="filter-section">
+            <input type="text" id="location-filter" placeholder="Search by city..." />
+            <input type="number" id="min-price" placeholder="Min Price" />
+            <input type="number" id="max-price" placeholder="Max Price" />
+            <button id="apply-filter">Filter</button>
+            <button id="reset-filter">Reset</button>
+        </div>
+
+        <div id="listings-grid">
+            @foreach (var prop in Model)
+            {
+                <div class="listing-card" data-id="@prop.PropID" data-city="@prop.City" data-price="@prop.ListPrice">
+                    <div class="listing-header">
+                        <h3>@prop.PropName -  @prop.ListPrice</h3>
+                        <button class="expand-btn">Expand</button>
+                    </div>
+
+                    <div class="listing-details">
+                        @if (prop.ListImage != null)
+                        {
+                            <img src="data:image/png;base64,@Convert.ToBase64String(prop.ListImage)" alt="Property Image" class="property-image" />
+                        }
+
+                        <p>@prop.Address, @prop.City</p>
+                        <p>Rooms: @prop.RoomsCount</p>
+
+                        @if (prop.ListVideo != null)
+                        {
+                            <button class="video-btn">View Video</button>
+                            <div class="video-preview">
+                                <video width="100%" controls>
+                                    <source src="data:video/mp4;base64,@Convert.ToBase64String(prop.ListVideo)" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        }
+
+                        <form asp-action="ApplyLease" method="get">
+                            <input type="hidden" name="propertyId" value="@prop.PropID" />
+                            <button type="submit" class="apply-btn">Apply for Lease</button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Expand/Collapse details
+        $('.expand-btn').click(function () {
+            var details = $(this).closest('.listing-card').find('.listing-details');
+            details.slideToggle();
+        });
+
+        // Show/Hide video
+        $('.video-btn').click(function () {
+            var videoDiv = $(this).closest('.listing-card').find('.video-preview');
+            videoDiv.slideToggle();
+        });
+
+        // ===== Filter Logic =====
+        $('#apply-filter').click(function () {
+            var city = $('#location-filter').val().toLowerCase();
+            var minPrice = parseFloat($('#min-price').val()) || 0;
+            var maxPrice = parseFloat($('#max-price').val()) || Number.MAX_SAFE_INTEGER;
+
+            $('.listing-card').each(function () {
+                var cardCity = $(this).data('city').toLowerCase();
+                var cardPrice = parseFloat($(this).data('price'));
+
+                if ((city === "" || cardCity.includes(city)) &&
+                    cardPrice >= minPrice && cardPrice <= maxPrice) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        $('#reset-filter').click(function () {
+            $('#location-filter').val('');
+            $('#min-price').val('');
+            $('#max-price').val('');
+            $('.listing-card').show();
+        });
+    </script>
+</body>

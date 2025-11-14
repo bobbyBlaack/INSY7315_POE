@@ -28,12 +28,12 @@ namespace NewDawnProperties.Controllers
             return View();
         }
 
-        [HttpPost]
         public IActionResult Listings()
         {
-
-            return View();
+            var listings = _context.Property.ToList(); // fetch all properties
+            return View(listings);
         }
+
 
         [HttpPost]
         public IActionResult RegisterAccount(UserModel model)
