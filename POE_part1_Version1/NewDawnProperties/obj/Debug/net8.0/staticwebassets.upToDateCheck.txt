@@ -6,6 +6,7 @@ wwwroot\images\Background3.jpg
 wwwroot\images\Background4.jpg
 wwwroot\images\Background5.jpg
 wwwroot\images\inside.jpg
+wwwroot\images\Messages.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

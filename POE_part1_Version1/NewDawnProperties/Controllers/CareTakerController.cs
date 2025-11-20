@@ -4,44 +4,32 @@ using NewDawnProperties.Services;
 
 namespace NewDawnProperties.Controllers
 {
-    public class CareTakerController : Controller
+    public class CaretakerController : Controller
     {
-        private readonly ApiService _apiService;
-        private readonly ILogger<CareTakerController> _logger;
+        private readonly ApiService _api;
+        private readonly ILogger<CaretakerController> _logger;
 
-        public CareTakerController(ApiService apiService, ILogger<CareTakerController> logger)
+        public CaretakerController(ApiService api, ILogger<CaretakerController> logger)
         {
-            _apiService = apiService;
+            _api = api;
             _logger = logger;
         }
 
         public async Task<IActionResult> Index()
         {
+            string role = HttpContext.Session.GetString("Role")?.ToLower() ?? "";
+
             try
             {
-                var tasks = await _apiService.GetCaretakerTasksAsync();
+                var tasks = await _api.GetCaretakerTasksAsync();
 
-                // Firebase → MVC mapping
-                var pendingTasks = tasks
-                    .Where(t => t.Status.Equals("open", StringComparison.OrdinalIgnoreCase))
-                    .ToList();
-
-                var inProgressTasks = tasks
-                    .Where(t => t.Status.Equals("inprogress", StringComparison.OrdinalIgnoreCase))
-                    .ToList();
-
-                var completedTasks = tasks
-                    .Where(t => t.Status.Equals("closed", StringComparison.OrdinalIgnoreCase))
-                    .ToList();
-
-                ViewBag.PendingTasks = pendingTasks;
-                ViewBag.InProgressTasks = inProgressTasks;
-                ViewBag.CompletedTasks = completedTasks;
+                ViewBag.PendingTasks = tasks.Where(t => t.Status == "open").ToList();
+                ViewBag.InProgressTasks = tasks.Where(t => t.Status == "inprogress").ToList();
+                ViewBag.CompletedTasks = tasks.Where(t => t.Status == "closed").ToList();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error fetching caretaker tasks");
-
                 ViewBag.PendingTasks = new List<MaintenanceTaskModel>();
                 ViewBag.InProgressTasks = new List<MaintenanceTaskModel>();
                 ViewBag.CompletedTasks = new List<MaintenanceTaskModel>();

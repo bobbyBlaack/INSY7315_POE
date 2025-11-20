@@ -954,3 +954,277 @@ button, .profile-btn, .signup-btn, .login-btn, .listing-btn {
     background-color: #d6a75c;
     color: #fff;
 }
+
+
+/*Communications Page */
+
+.comm-page {
+    animation: fadeIn 0.4s ease-out;
+    min-height: calc(100vh - 140px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.comm-shell {
+}
+
+.comm-sidebar {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(3px);
+}
+
+.comm-search .input-group {
+    background: #f7f3e9;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.comm-search .input-group-text {
+    background: transparent;
+}
+
+.comm-search input {
+    border: none;
+    box-shadow: none !important;
+    background: transparent;
+    font-size: 0.9rem;
+}
+
+    .comm-search input:focus {
+        outline: none;
+    }
+
+.comm-contact-list {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Contact item */
+.comm-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 6px;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+    .comm-contact-item:hover {
+        background: #fff3da;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(214, 167, 92, 0.35);
+    }
+
+    .comm-contact-item.active {
+        background: linear-gradient(135deg, #d6a75c, #b88d47);
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+        .comm-contact-item.active .contact-name,
+        .comm-contact-item.active .contact-role {
+            color: #fff !important;
+        }
+
+/* Avatar circle with initials */
+.avatar-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1e2c0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.comm-contact-item.active .avatar-circle {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.contact-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.contact-role {
+    font-size: 0.7rem;
+}
+
+/* Chat wrapper  */
+.comm-chat-wrapper {
+    background: rgba(255, 253, 245, 0.96);
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Chat header */
+.comm-chat-header {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #d6a75c, #f4c879);
+    color: #fff;
+}
+
+/* Messages area */
+.comm-messages {
+    padding: 18px 18px 8px 18px;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+/* Message rows */
+.message-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+    .message-row.mine {
+        justify-content: flex-end;
+    }
+
+    .message-row.theirs {
+        justify-content: flex-start;
+    }
+
+/* Bubbles */
+.message-bubble {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    animation: slideFade 0.2s ease-in;
+    font-size: 0.9rem;
+}
+
+.bubble-mine {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.bubble-theirs {
+    background: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 4px;
+    border-left: 4px solid #d6a75c;
+}
+
+.msg-sender {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.msg-time {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.msg-text {
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+/* Input bar */
+.comm-input-bar {
+    padding: 10px 16px 14px 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.comm-input-textarea {
+    border-radius: 999px;
+    resize: none;
+    border: 1px solid #e0cda3;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    max-height: 90px;
+}
+
+    .comm-input-textarea:focus {
+        border-color: #d6a75c;
+        box-shadow: 0 0 8px rgba(214, 167, 92, 0.35);
+    }
+
+/* Send button */
+.send-btn {
+    background-color: #000;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+    .send-btn:hover {
+        background-color: #333;
+        transform: translateY(-1px);
+    }
+
+/* Role badge reused */
+.role-badge {
+    background-color: #d6a75c !important;
+    color: #fff !important;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+/* Reuse slideFade animation */
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .comm-sidebar {
+        margin-bottom: 10px;
+    }
+
+    .message-bubble {
+        max-width: 85%;
+    }
+}
+
+/* Communications Background Image */
+.comm-page {
+    background-image: url('../images/Messages.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .comm-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 253, 240, 0.55); 
+        backdrop-filter: blur(2px);
+        z-index: 0;
+    }
+
+/* Makes sure all chat content sits ABOVE the background overlay */
+.comm-shell {
+    position: relative;
+    z-index: 5;
+}

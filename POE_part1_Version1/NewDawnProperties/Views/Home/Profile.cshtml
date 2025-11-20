@@ -30,6 +30,19 @@
                 </div>
 
                 <div class="profile-sections">
+                    <!-- Caretaker Dashboard Button -->
+                    @if (Context.Session.GetString("Role")?.ToLower() == "caretaker")
+                    {
+                        <div class="profile-section">
+                            <h3>Caretaker Dashboard</h3>
+                            <p>Access all your maintenance tasks, updates, and reports.</p>
+
+                            <a asp-controller="Caretaker" asp-action="Index" class="profile-btn"
+                               style="background-color:#d6a75c; width:200px; text-align:center;">
+                                Go to Dashboard
+                            </a>
+                        </div>
+                    }
                     <!-- Language Section -->
                     <div class="profile-section language">
                         <h3>@Localizer["MultiLanguage"]</h3>

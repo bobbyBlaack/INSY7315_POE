@@ -1,42 +1,47 @@
 using Microsoft.AspNetCore.Localization;
 using NewDawnProperties.Services;
 using System.Globalization;
-using NewDawnProperties.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Localisation and MVC with TempData provider
 builder.Services.AddControllersWithViews()
-    .AddViewLocalization(); 
+    .AddViewLocalization()
+    .AddSessionStateTempDataProvider();  
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
+// Enable Session and Memory Cache
+builder.Services.AddDistributedMemoryCache(); 
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(6);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// Register ApiService with HttpClient
 builder.Services.AddHttpClient<ApiService>();
-builder.Services.AddHttpClient();
+
 var app = builder.Build();
 
-// Supported cultures
-var supportedCultures = new[]
-{
-    new CultureInfo("en"),
-    new CultureInfo("af")
-};
-
-// Configure localization middleware
+// Localisation Middleware
 app.UseRequestLocalization(new RequestLocalizationOptions
 {
     DefaultRequestCulture = new RequestCulture("en"),
-    SupportedCultures = supportedCultures,
-    SupportedUICultures = supportedCultures
+    SupportedCultures = new[] { new CultureInfo("en"), new CultureInfo("af") },
+    SupportedUICultures = new[] { new CultureInfo("en"), new CultureInfo("af") }
 });
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+// Routing and Authorisation
 app.UseRouting();
-
 app.UseAuthorization();
 
+//Route Mapping
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
