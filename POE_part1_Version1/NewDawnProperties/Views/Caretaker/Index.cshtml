@@ -1,3 +1,165 @@
-﻿@{
+﻿@model dynamic
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
     ViewData["Title"] = "Caretaker Dashboard";
+
+    var pendingTasks = ViewBag.PendingTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
+    var inProgressTasks = ViewBag.InProgressTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
+    var completedTasks = ViewBag.CompletedTasks as List<NewDawnProperties.Models.MaintenanceTaskModel>;
+
+    Func<string, string> formatStatus = status =>
+    {
+        return status.ToLower() switch
+        {
+            "open" => "Pending",
+            "inprogress" => "In Progress",
+            "closed" => "Completed",
+            _ => status
+        };
+    };
 }
+
+<div class="caretaker-dashboard container-fluid py-4 position-relative">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Home/Index">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Caretaker</li>
+        </ol>
+    </nav>
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="fw-bold text-dark">@Localizer["Caretaker Dashboard"]</h1>
+        <a asp-controller="Home" asp-action="Profile" class="btn btn-outline-dark rounded-pill">
+            <i class="bi bi-person-circle me-2"></i>@Localizer["My Profile"]
+        </a>
+    </div>
+
+    <!-- Analytics Bar -->
+    <div class="alert alert-light border-0 shadow-sm mb-4 text-center rounded-4">
+        <h5 class="fw-semibold mb-3 text-dark">Task Overview</h5>
+        <div class="progress rounded-pill" style="height: 20px;">
+            @{
+                int totalTasks = pendingTasks.Count + inProgressTasks.Count + completedTasks.Count;
+                int completedPercent = totalTasks > 0 ? (completedTasks.Count * 100 / totalTasks) : 0;
+            }
+            <div class="progress-bar bg-success" style="width:@completedPercent%;">@completedPercent% Completed</div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="input-group mb-4 w-50 mx-auto">
+        <input id="taskSearch" type="text" class="form-control" placeholder="Search tasks..." />
+        <button class="btn btn-dark"><i class="bi bi-search"></i></button>
+    </div>
+
+    <div class="row g-4">
+        <!-- Pending -->
+        <div class="col-lg-4">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-warning text-dark d-flex justify-content-between">
+                    <h4 class="mb-0"><i class="bi bi-list-task me-2"></i>Pending Tasks</h4>
+                    <span class="badge bg-dark">@pendingTasks.Count</span>
+                </div>
+                <div class="card-body bg-light" id="activeTasksContainer">
+
+                    @foreach (var task in pendingTasks)
+                    {
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description"
+                             data-status="@task.Status">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fw-semibold mb-1">@task.Description</h5>
+                                    <p class="small text-muted mb-0">
+                                        Unit: @task.UnitID <br />
+                                        Created: @task.CreatedAt.ToString("yyyy-MM-dd")
+                                    </p>
+                                </div>
+
+                                <span class="badge bg-warning text-dark">@formatStatus(task.Status)</span>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- In Progress -->
+        <div class="col-lg-4">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-info text-white d-flex justify-content-between">
+                    <h4 class="mb-0"><i class="bi bi-hourglass-split me-2"></i>In Progress</h4>
+                    <span class="badge bg-dark">@inProgressTasks.Count</span>
+                </div>
+                <div class="card-body bg-light" id="progressTasksContainer">
+
+                    @foreach (var task in inProgressTasks)
+                    {
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description"
+                             data-status="@task.Status">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fw-semibold mb-1">@task.Description</h5>
+                                    <p class="small text-muted mb-0">
+                                        Unit: @task.UnitID <br />
+                                        Started: @task.CreatedAt.ToString("yyyy-MM-dd")
+                                    </p>
+                                </div>
+
+                                <span class="badge bg-info">@formatStatus(task.Status)</span>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Completed -->
+        <div class="col-lg-4">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-success text-white d-flex justify-content-between">
+                    <h4 class="mb-0"><i class="bi bi-check2-circle me-2"></i>Completed</h4>
+                    <span class="badge bg-dark">@completedTasks.Count</span>
+                </div>
+
+                <div class="card-body bg-light" id="completedTasksContainer">
+                    @foreach (var task in completedTasks)
+                    {
+                        <div class="list-group-item task-card mb-2 p-3 rounded-3 shadow-sm"
+                             data-description="@task.Description">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6 class="fw-semibold text-success">@task.Description</h6>
+                                    <p class="small text-muted">Completed</p>
+                                </div>
+
+                                <span class="badge bg-success">@formatStatus(task.Status)</span>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Search filter
+    document.getElementById('taskSearch').addEventListener('input', function (e) {
+        const term = e.target.value.toLowerCase();
+        document.querySelectorAll('.task-card').forEach(card => {
+            card.style.display = card.textContent.toLowerCase().includes(term) ? '' : 'none';
+        });
+    });
+</script>

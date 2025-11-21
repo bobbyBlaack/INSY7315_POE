@@ -5,24 +5,39 @@ using OpenAI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===== Add services to the container =====
-builder.Services.AddControllersWithViews();
+// ===========================
+// Localization + MVC
+// ===========================
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
-// ===== Ollama HTTP client service =====
+builder.Services
+    .AddControllersWithViews()
+    .AddViewLocalization()
+    .AddDataAnnotationsLocalization();
+
+// ===========================
+// HttpClient Services
+// ===========================
+builder.Services.AddHttpClient<ApiService>();
+builder.Services.AddScoped<ApiService>();
+
 builder.Services.AddHttpClient<OllamaService>();
 
-// ===== Database registration =====
-// Separate DbContexts for SQLite (offline) and Postgres (online)
+// ===========================
+// Database
+// ===========================
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("SQLiteConnection")));
 
-
-//firestoreservice
+// ===========================
+// Firestore sync services
+// ===========================
 builder.Services.AddScoped<FirestoreSyncService>();
 builder.Services.AddHostedService<FirestoreBackgroundSync>();
 
-
-// ===== Session configuration =====
+// ===========================
+// Session
+// ===========================
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -31,10 +46,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-
-
-
-// ===== OpenAI client =====
+// ===========================
+// OpenAI Client
+// ===========================
 builder.Services.AddSingleton<OpenAIClient>(sp =>
 {
     var config = sp.GetRequiredService<IConfiguration>();
@@ -44,7 +58,9 @@ builder.Services.AddSingleton<OpenAIClient>(sp =>
 
 var app = builder.Build();
 
-// ===== Middleware pipeline =====
+// ===========================
+// Middleware
+// ===========================
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -56,10 +72,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseRequestLocalization();   // needed for IViewLocalizer
 app.UseSession();
 app.UseAuthorization();
 
-// ===== Routing =====
+// ===========================
+// Routes
+// ===========================
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -34,7 +34,9 @@ namespace NewDawnProperties.Controllers
             return View(listings);
         }
 
-
+        // ===========================
+        // Register account
+        // ===========================
         [HttpPost]
         public IActionResult RegisterAccount(UserModel model)
         {
@@ -52,42 +54,51 @@ namespace NewDawnProperties.Controllers
                 return View(model);
             }
 
-            
             _context.Users.Add(model);
             _context.SaveChanges();
 
-            // Optional: Automatically log in the user after registration
+            // Store basic session values
+            var roleLower = model.Role?.Trim().ToLower() ?? "";
+
+            HttpContext.Session.SetInt32("UserID", model.UserID);
+            HttpContext.Session.SetString("UserId", model.UserID.ToString());
             HttpContext.Session.SetString("UserEmail", model.Email);
             HttpContext.Session.SetString("UserRole", model.Role);
+            HttpContext.Session.SetString("UserName",
+                string.IsNullOrWhiteSpace(model.UserName)
+                    ? $"{model.FName} {model.SName}"
+                    : model.UserName);
+            HttpContext.Session.SetString("Role", roleLower);
 
-            // Redirect based on role
-            if (model.Role == "Tenant")
+            // Redirect based on role (using same route names as VerifyUser)
+            if (roleLower == "tenant")
                 return RedirectToAction("TenantDashboard", "Tenant");
-            if (model.Role == "CareTaker")
-                return RedirectToAction("CaretakerDashboard", "Caretaker");
-             if (model.Role == "PropManager")
+            if (roleLower == "caretaker")
+                return RedirectToAction("Index", "Caretaker");
+            if (roleLower == "propmanager")
                 return RedirectToAction("PropManDashboard", "PropManager");
-            else
-                return RedirectToAction("Index", "Home");
+
+            return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult CreateAccount() { 
-        
+        public IActionResult CreateAccount()
+        {
             return View();
-        
         }
 
+        // ===========================
+        // Profile
+        // ===========================
         public async Task<IActionResult> Profile()
         {
             var userId = HttpContext.Session.GetInt32("UserID") ?? 0;
             if (userId == 0)
-                return RedirectToAction("Login", "Home");
+                return RedirectToAction("SignIn", "Home");
 
             var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userId);
 
             return View(user);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> UpdateProfile(UserModel updatedUser)
@@ -108,43 +119,54 @@ namespace NewDawnProperties.Controllers
             return Ok();
         }
 
-
-
+        // ===========================
+        // Sign in
+        // ===========================
         public IActionResult SignIn()
         {
-
             return View();
         }
 
         [HttpPost]
         public IActionResult VerifyUser(UserModel model)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
+            var user = _context.Users.FirstOrDefault(u =>
+                u.Email == model.Email && u.Password == model.Password);
 
             if (user != null)
             {
-                // storing session data
+                // normalised role
+                var roleLower = user.Role?.Trim().ToLower() ?? "";
+
+                // store ALL session keys used across app
+                HttpContext.Session.SetInt32("UserID", user.UserID);
+                HttpContext.Session.SetString("UserId", user.UserID.ToString()); // for API / comms
                 HttpContext.Session.SetString("UserEmail", user.Email);
                 HttpContext.Session.SetString("UserRole", user.Role);
-                HttpContext.Session.SetInt32("UserID", user.UserID);
+                HttpContext.Session.SetString("UserName",
+                    string.IsNullOrWhiteSpace(user.UserName)
+                        ? $"{user.FName} {user.SName}"
+                        : user.UserName);
+                HttpContext.Session.SetString("Role", roleLower);
 
-                var role = user.Role?.Trim().ToLower();
-
-                if (role == "admin")
+                // redirect based on role
+                if (roleLower == "admin")
                     return RedirectToAction("AdminDashboard", "Admin");
-                else if (role == "tenant")
+                else if (roleLower == "tenant")
                     return RedirectToAction("TenantDashboard", "Tenant");
-                else if (role == "caretaker")
-                    return RedirectToAction("CaretakerDashboard", "Caretaker");
-                else if (role == "propmanager")
+                else if (roleLower == "caretaker")
+                    // IMPORTANT: CaretakerController action is Index
+                    return RedirectToAction("Index", "Caretaker");
+                else if (roleLower == "propmanager")
                     return RedirectToAction("PropManDashboard", "PropManager");
+
+                // fallback
+                return RedirectToAction("Index", "Home");
             }
 
             ViewBag.ErrorMessage = "Invalid email or password.";
             return View("SignIn");
         }
-
-
 
         public IActionResult Privacy()
         {

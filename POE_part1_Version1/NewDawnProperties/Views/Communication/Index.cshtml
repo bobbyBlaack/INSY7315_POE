@@ -1,0 +1,184 @@
+﻿@model NewDawnProperties.Models.CommunicationViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Communications";
+}
+
+
+
+<div class="comm-page container-fluid py-4">
+
+    <div class="row g-4 comm-shell">
+        <!-- Left: Contact List -->
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="comm-sidebar h-100">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="mb-0 fw-bold">Chat Logs</h5>
+                    <span class="badge role-badge text-uppercase">
+                        @Model.CurrentUserRole
+                    </span>
+                </div>
+
+                <!-- Search contacts -->
+                <div class="comm-search mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input id="chatSearch"
+                               type="text"
+                               class="form-control border-0"
+                               placeholder="Search tenants, managers..." />
+                    </div>
+                </div>
+
+                <!-- Contacts list -->
+                <div class="comm-contact-list">
+                    @if (Model.Contacts.Any())
+                    {
+                        @foreach (var c in Model.Contacts)
+                        {
+                            var isActive = c.UserId == Model.SelectedContactId;
+
+                            <a asp-controller="Communication"
+                               asp-action="Index"
+                               asp-route-chatWithId="@c.UserId"
+                               class="comm-contact-item @(isActive ? "active" : "")"
+                               data-contact-name="@c.Name.ToLower()">
+
+                                <div class="avatar-circle">
+                                    @c.Name.Substring(0, 1).ToUpper()
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="contact-name">@c.Name</span>
+                                        <span class="contact-role badge bg-light text-dark">
+                                            @c.Role
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted small mt-3">
+                            No chats yet. Start a conversation.
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Chat Window -->
+        <div class="col-12 col-md-8 col-lg-9">
+            <div class="comm-chat-wrapper d-flex flex-column">
+
+                <!-- Chat header -->
+                <div class="comm-chat-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-0 fw-bold">
+                            @(!string.IsNullOrEmpty(Model.SelectedContactName)
+                                                        ? Model.SelectedContactName
+                                                        : "All Messages")
+                        </h5>
+                        <small class="text-muted">
+                            @(!string.IsNullOrEmpty(Model.SelectedContactName)
+                                                        ? "1-to-1 conversation"
+                                                        : "Building-wide communication")
+                        </small>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <span class="badge bg-light text-dark">
+                            Signed in as @Model.CurrentUserName
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div id="messageContainer" class="comm-messages flex-grow-1">
+                    @if (Model.Messages.Any())
+                    {
+                        @foreach (var msg in Model.Messages)
+                        {
+                            bool mine = msg.SenderId == Model.CurrentUserId;
+
+                            <div class="message-row @(mine ? "mine" : "theirs")">
+                                <div class="message-bubble @(mine ? "bubble-mine" : "bubble-theirs")">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <span class="msg-sender">
+                                            @(mine ? "You" : msg.SenderName)
+                                        </span>
+                                        <span class="msg-time">
+                                            @msg.Timestamp.ToString("yyyy-MM-dd HH:mm")
+                                        </span>
+                                    </div>
+                                    <div class="msg-text">
+                                        @msg.Message
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="h-100 d-flex align-items-center justify-content-center text-muted">
+                            <p class="mb-0">
+                                No messages yet. Say hi to get the conversation started.
+                            </p>
+                        </div>
+                    }
+                </div>
+
+                <!-- Input bar -->
+                <div class="comm-input-bar">
+                    <form method="post"
+                          asp-controller="Communication"
+                          asp-action="Send"
+                          class="d-flex align-items-center gap-2">
+
+                        <input type="hidden" name="chatWithId" value="@Model.SelectedContactId" />
+
+                        <textarea name="messageText"
+                                  class="form-control comm-input-textarea"
+                                  rows="1"
+                                  placeholder="Type your message..."
+                                  required></textarea>
+
+                        <button type="submit" class="btn send-btn d-flex align-items-center">
+                            <i class="bi bi-send-fill me-1"></i>
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Auto scroll to bottom of messages
+        window.addEventListener("load", () => {
+            const container = document.getElementById("messageContainer");
+            if (container) {
+                container.scrollTop = container.scrollHeight;
+            }
+
+            // Contact search filter
+            const search = document.getElementById("chatSearch");
+            if (search) {
+                search.addEventListener("input", function () {
+                    const term = this.value.toLowerCase();
+                    document.querySelectorAll(".comm-contact-item").forEach(item => {
+                        const name = item.getAttribute("data-contact-name");
+                        item.style.display = !name || name.includes(term) ? "" : "none";
+                    });
+                });
+            }
+        });
+    </script>
+}

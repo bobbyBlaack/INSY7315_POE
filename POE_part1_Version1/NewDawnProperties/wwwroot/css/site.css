@@ -101,3 +101,831 @@
         transform: scale(1.05);
     }
 
+
+/* --- Caretaker Page Styles --- */
+.caretaker-page {
+    background-color: #f8f9fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.caretaker-header {
+    background-color: #d6a75c;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .caretaker-header h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+.caretaker-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+}
+
+    .caretaker-nav a:hover {
+        opacity: 0.8;
+    }
+
+.caretaker-nav .active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.property-title {
+    font-size: 1.3rem;
+    margin: 1.5rem 2rem 0.5rem;
+    font-weight: 600;
+}
+
+.task-sections {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.task-box {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 45%;
+}
+
+    .task-box h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .task-table th, .task-table td {
+        padding: 0.75rem;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .task-table th {
+        background-color: #f1f1f1;
+        font-weight: 600;
+    }
+
+.task-row:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.caretaker-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: red;
+    margin-top: auto;
+    padding: 1rem;
+}
+
+/*     Caretaker Page Style   */
+
+.caretaker-dashboard {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(135deg, #fff8ef, #faf5e1);
+    background-image: url('../images/inside.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.caretaker-header {
+    background: rgba(214, 167, 92, 0.9);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+    .caretaker-header h1 {
+        font-weight: 700;
+        font-size: 1.9rem;
+        margin: 0;
+    }
+
+    .caretaker-header a {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+        .caretaker-header a:hover {
+            background-color: black;
+            transform: translateY(-2px);
+        }
+
+/* Task Cards */
+.card {
+    border: none;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+/* Section headers */
+.card-header {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    padding: 1rem 1.25rem;
+    border-radius: 20px 20px 0 0;
+}
+
+    .card-header.bg-success {
+        background: linear-gradient(90deg, #3cb371, #28a745);
+    }
+
+    .card-header.bg-secondary {
+        background: linear-gradient(90deg, #6c757d, #5a6268);
+    }
+
+/* Task List Items */
+.task-card {
+    background-color: #fffdfa;
+    border-left: 5px solid #d6a75c;
+    transition: all 0.3s ease;
+}
+
+    .task-card:hover {
+        background-color: #fff3da;
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+
+    .task-card h5 {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .task-card .badge {
+        border-radius: 20px;
+        padding: 8px 14px;
+    }
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    background-color: #fffdf8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.3s ease-out;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+/* Form inside modal */
+#taskUpdateForm input,
+#taskUpdateForm select,
+#taskUpdateForm textarea {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+
+    #taskUpdateForm input:focus,
+    #taskUpdateForm select:focus,
+    #taskUpdateForm textarea:focus {
+        border-color: #d6a75c;
+        box-shadow: 0 0 5px rgba(214, 167, 92, 0.4);
+    }
+
+/* Buttons inside modal */
+#saveChangesBtn {
+    background-color: #d6a75c;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+    #saveChangesBtn:hover {
+        background-color: #b88d47;
+        transform: translateY(-2px);
+    }
+
+/* Subtle animation for modal */
+@keyframes popIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .caretaker-dashboard {
+        padding: 20px;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .caretaker-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .caretaker-header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+    #taskUpdateForm textarea {
+        font-size: 0.9rem;
+    }
+}
+
+.breadcrumb {
+    background: transparent;
+    font-size: 0.95rem;
+}
+
+.task-card {
+    animation: slideFade 0.3s ease-in;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task-card:hover {
+    box-shadow: 0 0 15px rgba(214, 167, 92, 0.4);
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+#noteModal .modal-content {
+    background-color: #fffdfa;
+    border-radius: 20px;
+    animation: fadeInNote 0.3s ease-in;
+}
+
+#noteContent {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@keyframes fadeInNote {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Privacy Page Styling */
+.privacy-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url('../images/Background5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    position: relative;
+}
+
+    /* Soft overlay to improve text readability */
+    .privacy-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 213, 128, 0.45); /* warm translucent gold overlay */
+        backdrop-filter: blur(3px);
+        z-index: 0;
+    }
+
+.privacy-container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 900px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    padding: 50px 70px;
+    animation: fadeIn 0.8s ease;
+    color: #333;
+}
+
+    .privacy-container h1 {
+        font-size: 2.5rem;
+        color: #000;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #caa65b;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+.privacy-intro {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+.privacy-section {
+    margin-bottom: 30px;
+}
+
+    .privacy-section h2 {
+        font-size: 1.4rem;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .privacy-section p {
+        color: #333;
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+/* Back Button Styling */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #caa65b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .back-btn:hover {
+        background-color: #b48e48;
+        transform: translateY(-2px);
+    }
+
+/* Language switch styling */
+.language-switch {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    .language-switch label {
+        font-weight: 600;
+        color: #333;
+        margin-right: 10px;
+    }
+
+    .language-switch select {
+        padding: 8px 14px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: #fff;
+        transition: 0.3s;
+    }
+
+        .language-switch select:hover {
+            background: #f1f1f1;
+        }
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 30px 25px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 25px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-box {
+        padding: 20px;
+    }
+
+    .profile-info {
+        font-size: 1.1rem;
+        color: #ffffff;
+        margin-top: 5px;
+    }
+}
+
+.language-switch {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    .language-switch label {
+        font-weight: 600;
+        color: #555;
+        margin-right: 10px;
+    }
+
+    .language-switch select {
+        padding: 8px 14px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        transition: 0.3s;
+    }
+
+        .language-switch select:hover {
+            background: #eee;
+        }
+
+.badge.bg-warning {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+}
+
+.badge.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #d6a75c;
+    color: #fff;
+}
+
+
+/*Communications Page */
+
+.comm-page {
+    animation: fadeIn 0.4s ease-out;
+    min-height: calc(100vh - 140px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.comm-shell {
+}
+
+.comm-sidebar {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(3px);
+}
+
+.comm-search .input-group {
+    background: #f7f3e9;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.comm-search .input-group-text {
+    background: transparent;
+}
+
+.comm-search input {
+    border: none;
+    box-shadow: none !important;
+    background: transparent;
+    font-size: 0.9rem;
+}
+
+    .comm-search input:focus {
+        outline: none;
+    }
+
+.comm-contact-list {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Contact item */
+.comm-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 6px;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+    .comm-contact-item:hover {
+        background: #fff3da;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(214, 167, 92, 0.35);
+    }
+
+    .comm-contact-item.active {
+        background: linear-gradient(135deg, #d6a75c, #b88d47);
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+        .comm-contact-item.active .contact-name,
+        .comm-contact-item.active .contact-role {
+            color: #fff !important;
+        }
+
+/* Avatar circle with initials */
+.avatar-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1e2c0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.comm-contact-item.active .avatar-circle {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.contact-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.contact-role {
+    font-size: 0.7rem;
+}
+
+/* Chat wrapper  */
+.comm-chat-wrapper {
+    background: rgba(255, 253, 245, 0.96);
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Chat header */
+.comm-chat-header {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #d6a75c, #f4c879);
+    color: #fff;
+}
+
+/* Messages area */
+.comm-messages {
+    padding: 18px 18px 8px 18px;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+/* Message rows */
+.message-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+    .message-row.mine {
+        justify-content: flex-end;
+    }
+
+    .message-row.theirs {
+        justify-content: flex-start;
+    }
+
+/* Bubbles */
+.message-bubble {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    animation: slideFade 0.2s ease-in;
+    font-size: 0.9rem;
+}
+
+.bubble-mine {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.bubble-theirs {
+    background: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 4px;
+    border-left: 4px solid #d6a75c;
+}
+
+.msg-sender {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.msg-time {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.msg-text {
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+/* Input bar */
+.comm-input-bar {
+    padding: 10px 16px 14px 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.comm-input-textarea {
+    border-radius: 999px;
+    resize: none;
+    border: 1px solid #e0cda3;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    max-height: 90px;
+}
+
+    .comm-input-textarea:focus {
+        border-color: #d6a75c;
+        box-shadow: 0 0 8px rgba(214, 167, 92, 0.35);
+    }
+
+/* Send button */
+.send-btn {
+    background-color: #000;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+    .send-btn:hover {
+        background-color: #333;
+        transform: translateY(-1px);
+    }
+
+/* Role badge reused */
+.role-badge {
+    background-color: #d6a75c !important;
+    color: #fff !important;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+/* Reuse slideFade animation */
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .comm-sidebar {
+        margin-bottom: 10px;
+    }
+
+    .message-bubble {
+        max-width: 85%;
+    }
+}
+
+/* Communications Background Image */
+.comm-page {
+    background-image: url('../images/Messages.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .comm-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 253, 240, 0.55);
+        backdrop-filter: blur(2px);
+        z-index: 0;
+    }
+
+/* Makes sure all chat content sits ABOVE the background overlay */
+.comm-shell {
+    position: relative;
+    z-index: 5;
+}

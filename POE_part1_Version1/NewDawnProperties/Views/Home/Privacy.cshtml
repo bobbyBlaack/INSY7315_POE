@@ -1,6 +1,63 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = Localizer["PrivacyPolicyTitle"];
 }
-<h1>@ViewData["Title"]</h1>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="privacy-page">
+    <div class="privacy-container">
+        <h1>@Localizer["PrivacyPolicyTitle"]</h1>
+        <p class="privacy-intro">@Localizer["PrivacyIntro"]</p>
+
+        <section class="privacy-section">
+            <h2>@Localizer["DataCollection"]</h2>
+            <p>@Localizer["DataCollectionDescription"]</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>@Localizer["DataUsage"]</h2>
+            <p>@Localizer["DataUsageDescription"]</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>@Localizer["DataProtection"]</h2>
+            <p>@Localizer["DataProtectionDescription"]</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>@Localizer["UserRights"]</h2>
+            <p>@Localizer["UserRightsDescription"]</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>@Localizer["ContactUs"]</h2>
+            <p>@Localizer["ContactUsDescription"]</p>
+        </section>
+
+        <!-- Language Selector -->
+        <div class="language-switch">
+            <label>@Localizer["SelectLanguage"]:</label>
+            <select id="languageSelect" class="form-select">
+                <option value="en">@Localizer["English"]</option>
+                <option value="af">@Localizer["Afrikaans"]</option>
+            </select>
+        </div>
+
+        <a asp-controller="Home" asp-action="Profile" class="back-btn">@Localizer["BackToProfile"]</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('languageSelect').addEventListener('change', function () {
+            const selectedLang = this.value;
+            const returnUrl = window.location.pathname;
+            fetch('/Home/SetLanguage', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `culture=${selectedLang}&returnUrl=${returnUrl}`
+            }).then(() => {
+                window.location.reload();
+            });
+        });
+    </script>
+}
