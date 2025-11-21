@@ -1,30 +1,80 @@
-﻿@{
+﻿@model List<NewDawnProperties.Controllers.AppUser>
+
+@{
     ViewData["Title"] = "Management";
 }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/admin.css">
 
-<textarea>Search bar</textarea> 
-<button>Search</button>
-<button>Add New User</button>
-<table>
-    <thead>
-          <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Located</th>
-                <th>Status</th>
-                <th>Actions</th>
-          </tr>  
-    </thead>
-    <tbody>
+<!-- NAVBAR -->
+<style>
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #E6B566;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 0;
+        z-index: 1000;
+        font-weight: bold;
+    }
+
+        #navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color .3s;
+        }
+
+            #navbar a:hover {
+                color: white;
+            }
+
+        #navbar #logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    body {
+        padding-top: 80px;
+    }
+</style>
+
+<div id="navbar">
+    <a href="/Admin/AdminDashboard" id="logo">Company Logo</a>
+    <a href="/Admin/AdminDashboard">Dashboard</a>
+    <a href="/Admin/Broadcast">Broadcast</a>
+    <a href="/Admin/Management">Management</a>
+    <a href="/Admin/Escalations">Escalations</a>
+    <a href="/Admin/Reports">Reports</a>
+</div>
+
+<h1>User Management</h1>
+
+@if (TempData["Message"] != null)
+{
+    <p style="color: green">@TempData["Message"]</p>
+}
+
+<form method="get">
+    <input name="search" placeholder="Search users..." class="form-control" />
+</form>
+
+<table class="table mt-3">
+    <tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr>
+    @foreach (var u in Model)
+    {
         <tr>
-            <td>Username</td>
-            <td>Role</td>
-            <td>Actions</td>
+            <td>@u.Name</td>
+            <td>@u.Email</td>
+            <td>@u.Role</td>
+            <td>@(u.IsActive ? "Active" : "Inactive")</td>
+            <td>
+                <a href="/Admin/EditUser/@u.Id" class="btn btn-sm btn-warning">Edit</a>
+                <a href="/Admin/DeleteUser/@u.Id" class="btn btn-sm btn-danger">Delete</a>
+            </td>
         </tr>
-    </tbody>
+    }
 </table>

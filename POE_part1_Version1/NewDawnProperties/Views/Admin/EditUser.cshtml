@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Reports";
+﻿@model NewDawnProperties.Controllers.AppUser
+
+@{
+    ViewData["Title"] = "Edit User";
 }
 
 
@@ -49,20 +51,22 @@
     <a href="/Admin/Reports">Reports</a>
 </div>
 
-<h1>Generate Report</h1>
+<h1>Edit User</h1>
 
-<form method="post" asp-action="GenerateReport">
-    <label>Property</label>
-    <input name="property" class="form-control" />
+<form method="post">
+    <input type="hidden" asp-for="Id" />
 
-    <label>Tenant</label>
-    <input name="tenant" class="form-control" />
+    <label>Name</label>
+    <input asp-for="Name" class="form-control" />
 
-    <label>Start Date</label>
-    <input type="date" name="startDate" class="form-control" />
+    <label>Email</label>
+    <input asp-for="Email" class="form-control" />
 
-    <label>End Date</label>
-    <input type="date" name="endDate" class="form-control" />
+    <label>Role</label>
+    <input asp-for="Role" class="form-control" />
 
-    <button class="btn btn-primary mt-3">Generate</button>
+    <label>Active</label>
+    <input type="checkbox" asp-for="IsActive" />
+
+    <button class="btn btn-primary mt-3">Save</button>
 </form>

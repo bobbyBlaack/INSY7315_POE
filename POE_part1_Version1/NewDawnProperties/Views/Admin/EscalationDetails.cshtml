@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Reports";
+﻿@model NewDawnProperties.Controllers.EscalationItem
+
+@{
+    ViewData["Title"] = "Escalation Details";
 }
 
 
@@ -49,20 +51,10 @@
     <a href="/Admin/Reports">Reports</a>
 </div>
 
-<h1>Generate Report</h1>
+<h1>Escalation Details</h1>
 
-<form method="post" asp-action="GenerateReport">
-    <label>Property</label>
-    <input name="property" class="form-control" />
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Issue:</strong> @Model.Issue</p>
 
-    <label>Tenant</label>
-    <input name="tenant" class="form-control" />
-
-    <label>Start Date</label>
-    <input type="date" name="startDate" class="form-control" />
-
-    <label>End Date</label>
-    <input type="date" name="endDate" class="form-control" />
-
-    <button class="btn btn-primary mt-3">Generate</button>
-</form>
+<a href="/Admin/Escalations" class="btn btn-secondary mt-3">Back</a>
